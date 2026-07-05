@@ -84,19 +84,6 @@ const VideoSection = () => {
               Video Highlights
             </motion.h2>
           </div>
-          <motion.a
-            href="https://www.youtube.com/@devayushrout"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="font-mono text-[11px] text-muted-foreground hover:text-foreground transition-colors duration-150 inline-flex items-center gap-1"
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.3, delay: 0.1 }}
-          >
-            view channel
-            <ArrowUpRight size={10} />
-          </motion.a>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
