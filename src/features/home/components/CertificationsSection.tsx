@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ShieldCheck, ExternalLink, Award, Sparkles, Atom } from "lucide-react";
 import servicenowIcon from "@/assets/servicenow.png";
+import microsoftIcon from "@/assets/microsoft.png";
+import linkedinIcon from "@/assets/linkedin.png";
 
 interface Certification {
   title: string;
@@ -10,7 +12,8 @@ interface Certification {
   description: string;
   skills: string[];
   verificationUrl?: string;
-  color: string;
+  glowColor: string;
+  borderColor: string;
   logo: any;
 }
 
@@ -23,7 +26,8 @@ const certifications: Certification[] = [
     description: "Validates system administration, database management, security access (ACLs), user role permissions, Flow Designer automations, and ITSM configurations on the ServiceNow platform.",
     skills: ["System Administration", "Flow Designer", "Platform Security", "ITSM Config", "User Management"],
     verificationUrl: "https://www.credly.com/badges/2fce68b9-e952-4883-a242-48b70cc234a3/public_url",
-    color: "from-[#203a3d] to-[#0f1d1e] border-[#3b7b80]/20 hover:border-[#3b7b80]/50 shadow-[#3b7b80]/5 hover:shadow-[#3b7b80]/10",
+    glowColor: "bg-[#14b8a6]/10",
+    borderColor: "group-hover:border-[#14b8a6]/40",
     logo: servicenowIcon
   },
   {
@@ -34,7 +38,8 @@ const certifications: Certification[] = [
     description: "Proves skills in designing, building, scripting, and deploying scoped custom applications on the ServiceNow PaaS. Covers Glide APIs, Script Includes, Client/Server Scripting, and IntegrationHub.",
     skills: ["Scoped Architecture", "Client & Server Scripting", "Glide System APIs", "UI Actions & Policies", "IntegrationHub Spokes"],
     verificationUrl: "https://www.credly.com/badges/2cc3c040-1b14-4b83-8cb7-63efd0e5532b/public_url",
-    color: "from-[#293e40] to-[#121c1d] border-primary/20 hover:border-primary/50 shadow-primary/5 hover:shadow-primary/10",
+    glowColor: "bg-primary/10",
+    borderColor: "group-hover:border-primary/40",
     logo: servicenowIcon
   },
   {
@@ -45,7 +50,8 @@ const certifications: Certification[] = [
     description: "Validates expertise in React.js frontend development. Covers component state management, hook mechanics (useState, useEffect, custom hooks), rendering performance, and structured UI logic.",
     skills: ["React.js", "Hooks (useEffect/State)", "Props Rendering", "State Management", "UI Lifecycle"],
     verificationUrl: "https://www.hackerrank.com/certificates/f17a39c89954",
-    color: "from-[#1c3c2a] to-[#0e1d15] border-emerald-500/20 hover:border-emerald-500/50 shadow-emerald-500/5 hover:shadow-emerald-500/10",
+    glowColor: "bg-[#2ec866]/10",
+    borderColor: "group-hover:border-[#2ec866]/40",
     logo: "https://cdn.simpleicons.org/hackerrank/2EC866"
   },
   {
@@ -56,7 +62,8 @@ const certifications: Certification[] = [
     description: "Validates comprehensive software engineering skills. Covers algorithmic problem solving, abstract data structures, relational database querying (SQL), system design paradigms, and OOP principles.",
     skills: ["Problem Solving", "Data Structures", "SQL Querying", "OOP Design", "Algorithms"],
     verificationUrl: "https://www.hackerrank.com/certificates/e889d0ab5422",
-    color: "from-[#183626] to-[#0d1c14] border-emerald-500/20 hover:border-emerald-500/50 shadow-emerald-500/5 hover:shadow-emerald-500/10",
+    glowColor: "bg-[#2ec866]/10",
+    borderColor: "group-hover:border-[#2ec866]/40",
     logo: "https://cdn.simpleicons.org/hackerrank/2EC866"
   },
   {
@@ -66,7 +73,8 @@ const certifications: Certification[] = [
     credentialId: "B6FE12DD",
     description: "Validates core understanding of quantum computing principles, qubit states, superposition, entanglement, quantum logic gates, and fundamental quantum algorithms.",
     skills: ["Quantum Computing", "Qubits & Superposition", "Entanglement", "Quantum Gates", "Algorithms"],
-    color: "from-[#2e1d3d] to-[#160e1f] border-purple-500/20 hover:border-purple-500/50 shadow-purple-500/5 hover:shadow-purple-500/10",
+    glowColor: "bg-[#8b5cf6]/10",
+    borderColor: "group-hover:border-[#8b5cf6]/40",
     logo: "atom"
   },
   {
@@ -77,8 +85,9 @@ const certifications: Certification[] = [
     description: "Validates foundations of generative AI, large language models (LLMs), prompt engineering strategies, ethical AI governance, and applying Microsoft/LinkedIn AI tools in engineering workflows.",
     skills: ["Generative AI", "Prompt Engineering", "Large Language Models", "AI Ethics", "Workflow Automation"],
     verificationUrl: "https://www.linkedin.com/learning/certificates/48b5ea58357af437537df50baafb1d36b843c2d2621223bb8a14cc812bd8e039",
-    color: "from-[#3b2b1d] to-[#1c150e] border-amber-500/20 hover:border-amber-500/50 shadow-amber-500/5 hover:shadow-amber-500/10",
-    logo: "https://cdn.simpleicons.org/microsoft/F25022"
+    glowColor: "bg-[#f25022]/10",
+    borderColor: "group-hover:border-[#f25022]/40",
+    logo: microsoftIcon
   },
   {
     title: "HTML, CSS, and Generative AI: Speed Up Your Process",
@@ -88,8 +97,9 @@ const certifications: Certification[] = [
     description: "Focuses on leveraging generative AI tools to accelerate web design workflows, write cleaner HTML5/CSS3 layouts, optimize DOM styling, and automate styling generation.",
     skills: ["HTML5 & CSS3", "Generative AI", "Rapid Prototyping", "Web Design", "Workflow Automation"],
     verificationUrl: "https://www.linkedin.com/learning/certificates/47595de874c194ed924727e1132c6b47a79ee957631dcd92724ca8c55139aba8",
-    color: "from-[#1d2d3c] to-[#0e171f] border-sky-500/20 hover:border-sky-500/50 shadow-sky-500/5 hover:shadow-sky-500/10",
-    logo: "https://cdn.simpleicons.org/linkedin/0A66C2"
+    glowColor: "bg-[#0a66c2]/10",
+    borderColor: "group-hover:border-[#0a66c2]/40",
+    logo: linkedinIcon
   },
   {
     title: "Further Mathematics for Year 13 (Calculus & Matrices)",
@@ -99,7 +109,8 @@ const certifications: Certification[] = [
     description: "Validates advanced mathematical foundations covering differential equations, complex numbers, curve sketching, matrix algebra, vector cross products, and advanced integration techniques.",
     skills: ["Advanced Matrices", "Complex Numbers", "Differential Equations", "Further Integration", "Vector Products"],
     verificationUrl: "https://courses.edx.org/certificates/ccd9b21dbcb64ca580d41abb7ed5e485",
-    color: "from-[#1c2a38] to-[#0e151e] border-blue-500/20 hover:border-blue-500/50 shadow-blue-500/5 hover:shadow-blue-500/10",
+    glowColor: "bg-[#0075b4]/10",
+    borderColor: "group-hover:border-[#0075b4]/40",
     logo: "https://cdn.simpleicons.org/edx/white"
   }
 ];
@@ -145,12 +156,15 @@ const CertificationsSection = () => {
           {certifications.map((cert, i) => (
             <motion.div
               key={cert.title}
-              className={`relative overflow-hidden rounded-xl border bg-gradient-to-b ${cert.color} transition-all duration-300 p-6 flex flex-col justify-between group shadow-lg hover:-translate-y-1`}
+              className={`relative overflow-hidden rounded-xl border border-white/5 bg-[#0c0c0c] hover:bg-[#0e0e0e] ${cert.borderColor} transition-all duration-300 p-6 flex flex-col justify-between group shadow-[0_4px_30px_rgba(0,0,0,0.5)] hover:-translate-y-1`}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
             >
+              {/* Brand Glow Background */}
+              <div className={`absolute top-0 left-0 w-32 h-32 rounded-full ${cert.glowColor} blur-[50px] opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none -z-10`} />
+
               {/* Pulsing Status Dot */}
               <div className="absolute top-5 right-5 flex items-center gap-2">
                 <span className="relative flex h-2 w-2">
@@ -163,7 +177,7 @@ const CertificationsSection = () => {
               <div>
                 {/* Header Info */}
                 <div className="flex items-start gap-3 mb-5">
-                  <div className="w-9 h-9 rounded-lg bg-zinc-950/80 border border-border/60 p-1.5 flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-9 h-9 rounded-lg bg-zinc-950/80 border border-border/60 p-1.5 flex items-center justify-center shrink-0 mt-0.5 transition-transform duration-300 group-hover:scale-105">
                     {cert.logo === "atom" ? (
                       <Atom className="w-full h-full text-purple-400 p-0.5" />
                     ) : (

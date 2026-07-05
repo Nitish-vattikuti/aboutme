@@ -1,6 +1,6 @@
 import { useEffect, useState, useCallback } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { User, FolderOpen, Layers, Mail, Compass, Wrench, Briefcase } from "lucide-react";
+import { User, FolderOpen, Layers, Mail, Compass, Wrench, Briefcase, Award } from "lucide-react";
 import { MenuToggleIcon } from "@/components/ui/menu-toggle-icon";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +10,7 @@ const navLinks = [
   { label: "approach", href: "#approach", icon: Compass },
   { label: "projects", href: "#projects", icon: FolderOpen },
   { label: "stack", href: "#stack", icon: Layers },
+  { label: "certifications", href: "#certifications", icon: Award },
   { label: "services", href: "#services", icon: Wrench },
   { label: "contact", href: "#contact", icon: Mail },
 ];
