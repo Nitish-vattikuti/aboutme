@@ -6,6 +6,7 @@ import ExperienceSection from "@/features/home/components/ExperienceSection";
 import EngineeringApproachSection from "@/features/home/components/EngineeringApproachSection";
 import ProjectsSection from "@/features/home/components/ProjectsSection";
 import TechStackSection from "@/features/home/components/TechStackSection";
+import CertificationsSection from "@/features/home/components/CertificationsSection";
 
 import ServicesSection from "@/features/home/components/ServicesSection";
 import ContactSection from "@/features/home/components/ContactSection";
@@ -38,6 +39,9 @@ const Index = () => {
       </ScrollReveal>
       <ScrollReveal>
         <TechStackSection />
+      </ScrollReveal>
+      <ScrollReveal>
+        <CertificationsSection />
       </ScrollReveal>
 
       <ScrollReveal>
