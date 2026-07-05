@@ -297,7 +297,7 @@ const HeroSection = () => {
               style={{ animationDelay: "0.24s" }}
             >
               <a
-                href="https://drive.google.com/file/d/17HlHKPaxA2mAsWaQY8CTH4G32W6cAJWv/view?usp=sharing"
+                href="https://drive.google.com/file/d/1YWxkSYy0Uc1yHMIZVNFOItWxh7xBzqnR/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center min-w-[160px] font-mono text-[13px] px-6 py-3.5 rounded-md bg-primary text-primary-foreground hover:bg-primary/90 transition-all duration-300 shadow-[0_0_20px_rgba(20,184,104,0.3)] hover:shadow-[0_0_30px_rgba(20,184,104,0.5)] transform hover:-translate-y-0.5"

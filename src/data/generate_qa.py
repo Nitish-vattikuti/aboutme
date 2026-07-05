@@ -57,7 +57,7 @@ personal_questions = [
     ("Do you do freelance work?", ["freelance", "contract", "gig"], "Yes, I am available for freelance projects and consulting roles in web development, ServiceNow config, or python-based scripting."),
     ("What is your LinkedIn profile link?", ["linkedin", "social"], "My LinkedIn is linkedin.com/in/nitish-vattikuti-6bba85280."),
     ("What is your GitHub profile link?", ["github", "code"], "My GitHub is github.com/Nitish-vattikuti."),
-    ("How can I download your resume?", ["resume", "cv", "download"], "You can download my resume directly using my [Google Drive Link](https://drive.google.com/file/d/1yC3-st8W7wKJDJqs0-6cSaWh14MaaeE-/view?usp=sharing)."),
+    ("How can I download your resume?", ["resume", "cv", "download"], "You can download my resume directly using my [Google Drive Link](https://drive.google.com/file/d/1YWxkSYy0Uc1yHMIZVNFOItWxh7xBzqnR/view?usp=sharing)."),
     ("Are you a student or a professional?", ["student", "professional", "status"], "I am currently both: a pre-final year BTech Computer Science student at MVGR College of Engineering, a Technical Intern at DRDO CABS, and a Software Engineering Intern at Vantiris Technologies LLP."),
     ("What is your portfolio URL?", ["portfolio", "website", "url"], "My portfolio is hosted on GitHub at https://nitish-vattikuti.github.io/My-Portfolio/."),
     ("What drives your engineering philosophy?", ["philosophy", "think", "engineering"], "I believe in building practical, high-performance, and decentralized solutions that solve real-world problems while respecting hardware boundaries (like SWaP and data privacy)."),
@@ -423,3 +423,20 @@ with open(target_path, "w", encoding="utf-8") as f:
     json.dump(qa_list, f, indent=2, ensure_ascii=False)
 
 print(f"Successfully generated {len(qa_list)} QA pairs at: {target_path}")
+
+# Also copy to vercel serverless function and supabase edge function directories
+import shutil
+base_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+paths_to_copy = [
+    os.path.join(base_dir, "api", "_data", "qa_dataset.json"),
+    os.path.join(base_dir, "supabase", "functions", "chat", "qa_dataset.json")
+]
+for p in paths_to_copy:
+    try:
+        os.makedirs(os.path.dirname(p), exist_ok=True)
+        shutil.copy(target_path, p)
+        print(f"Copied QA dataset to: {p}")
+    except Exception as e:
+        print(f"Error copying to {p}: {e}")
+
+

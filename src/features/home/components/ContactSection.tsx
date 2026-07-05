@@ -6,7 +6,7 @@ const links = [
   { icon: Mail, label: "1896nitishvattikuti@gmail.com", href: "mailto:1896nitishvattikuti@gmail.com", external: false },
   { icon: Github, label: "github.com/Nitish-vattikuti", href: "https://github.com/Nitish-vattikuti", external: true },
   { icon: Linkedin, label: "linkedin.com/in/nitish-vattikuti", href: "https://www.linkedin.com/in/nitish-vattikuti-6bba85280", external: true },
-  { icon: FileText, label: "Resume (PDF)", href: "https://drive.google.com/file/d/17HlHKPaxA2mAsWaQY8CTH4G32W6cAJWv/view?usp=sharing", external: true },
+  { icon: FileText, label: "Resume (PDF)", href: "https://drive.google.com/file/d/1YWxkSYy0Uc1yHMIZVNFOItWxh7xBzqnR/view?usp=sharing", external: true },
 ];
 
 const terminalLines = [

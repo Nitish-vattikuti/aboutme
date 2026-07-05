@@ -14,7 +14,7 @@
       "hi",
       "about hi"
     ],
-    "answer": "Hello! I'm Nitish's AI assistant. Feel free to ask me anything about my education, Vantiris internship, ServiceNow certifications, or my 6 engineering projects!"
+    "answer": "Hello! I'm Nitish's AI assistant. Feel free to ask me anything about my education, DRDO and Vantiris internships, ServiceNow certifications, or my 6 engineering projects!"
   },
   {
     "id": 2,
@@ -26,11 +26,11 @@
       "hey"
     ],
     "alternatives": [
-      "about hello",
       "hello",
+      "about hello",
       "hello hi hey"
     ],
-    "answer": "Hello! I'm Nitish's AI assistant. Feel free to ask me anything about my education, Vantiris internship, ServiceNow certifications, or my 6 engineering projects!"
+    "answer": "Hello! I'm Nitish's AI assistant. Feel free to ask me anything about my education, DRDO and Vantiris internships, ServiceNow certifications, or my 6 engineering projects!"
   },
   {
     "id": 3,
@@ -42,11 +42,11 @@
       "hello"
     ],
     "alternatives": [
+      "hey",
       "about hey",
-      "hey hi hello",
-      "hey"
+      "hey hi hello"
     ],
-    "answer": "Hello! I'm Nitish's AI assistant. Feel free to ask me anything about my education, Vantiris internship, ServiceNow certifications, or my 6 engineering projects!"
+    "answer": "Hello! I'm Nitish's AI assistant. Feel free to ask me anything about my education, DRDO and Vantiris internships, ServiceNow certifications, or my 6 engineering projects!"
   },
   {
     "id": 4,
@@ -59,11 +59,11 @@
       "number"
     ],
     "alternatives": [
-      "about trained",
       "how many questions are you trained on",
-      "trained questions count"
+      "trained questions count",
+      "about trained"
     ],
-    "answer": "I am trained on exactly 244 specific questions and answers covering my education, work experience, certifications, and project details."
+    "answer": "I am trained on exactly 249 specific questions and answers covering my education, work experience, certifications, and project details."
   },
   {
     "id": 5,
@@ -76,11 +76,11 @@
       "database"
     ],
     "alternatives": [
-      "about know",
       "how many questions do you know",
+      "about know",
       "know questions limit"
     ],
-    "answer": "My offline database contains exactly 244 specific questions covering my engineering profile, projects, and skills."
+    "answer": "My offline database contains exactly 249 specific questions covering my engineering profile, projects, and skills."
   },
   {
     "id": 6,
@@ -91,11 +91,11 @@
       "who"
     ],
     "alternatives": [
-      "what is your name",
       "about name",
-      "tell me about your name",
       "name who",
-      "explain your name"
+      "tell me about your name",
+      "explain your name",
+      "what is your name"
     ],
     "answer": "My name is Nitish Vattikuti."
   },
@@ -110,10 +110,10 @@
     ],
     "alternatives": [
       "about about",
-      "about profile who",
-      "tell me about yourself."
+      "tell me about yourself.",
+      "about profile who"
     ],
-    "answer": "I'm a BTech Computer Science Engineering student at MVGR College of Engineering and a Software Engineering Intern at Vantiris Technologies LLP. I also hold ServiceNow CSA and CAD certifications."
+    "answer": "I'm a BTech Computer Science Engineering student at MVGR College of Engineering, a Technical Intern at DRDO CABS, and a Software Engineering Intern at Vantiris Technologies LLP. I also hold ServiceNow CSA and CAD certifications."
   },
   {
     "id": 8,
@@ -129,7 +129,7 @@
       "what do you do",
       "do occupation role"
     ],
-    "answer": "I am a Software Developer and Software Engineering Intern specializing in responsive web architectures, computer vision, and ServiceNow application development."
+    "answer": "I am a Software Developer and Intern specializing in C++/Qt applications, web architectures, computer vision, and ServiceNow application development."
   },
   {
     "id": 9,
@@ -142,9 +142,9 @@
       "where"
     ],
     "alternatives": [
-      "location live city",
+      "about location",
       "where are you located",
-      "about location"
+      "location live city"
     ],
     "answer": "I am based in Visakhapatnam, Andhra Pradesh, India."
   },
@@ -159,11 +159,11 @@
       "call"
     ],
     "alternatives": [
-      "about phone",
-      "what is your phone number",
-      "explain your phone number",
+      "tell me about your phone number",
       "phone mobile contact",
-      "tell me about your phone number"
+      "what is your phone number",
+      "about phone",
+      "explain your phone number"
     ],
     "answer": "You can call or reach me at +91 8885251896."
   },
@@ -177,11 +177,11 @@
       "contact"
     ],
     "alternatives": [
-      "tell me about your email address",
-      "what is your email address",
-      "explain your email address",
       "about email",
-      "email mail contact"
+      "email mail contact",
+      "tell me about your email address",
+      "explain your email address",
+      "what is your email address"
     ],
     "answer": "My email is 1896nitishvattikuti@gmail.com."
   },
@@ -196,10 +196,10 @@
       "opportunity"
     ],
     "alternatives": [
-      "are you currently open to work",
-      "is nitish currently open to work",
+      "about work",
       "work hire job",
-      "about work"
+      "is nitish currently open to work",
+      "are you currently open to work"
     ],
     "answer": "Yes, I am open to internships, projects, and collaborative software developer opportunities, particularly in web development or ServiceNow application development."
   },
@@ -213,11 +213,11 @@
       "born"
     ],
     "alternatives": [
+      "location of your home town",
+      "where is your home town",
       "about hometown",
       "where can i find your home town",
-      "hometown native born",
-      "location of your home town",
-      "where is your home town"
+      "hometown native born"
     ],
     "answer": "My home town is Visakhapatnam, Andhra Pradesh, India."
   },
@@ -231,9 +231,9 @@
       "passion"
     ],
     "alternatives": [
-      "about interest",
+      "what are your primary areas of interest",
       "interest domain passion",
-      "what are your primary areas of interest"
+      "about interest"
     ],
     "answer": "My primary domains are computer vision, infrastructure monitoring, responsive web architectures, and cloud solutions on ServiceNow."
   },
@@ -248,9 +248,9 @@
     ],
     "alternatives": [
       "do you do freelance work",
-      "does nitish do freelance work",
       "about freelance",
-      "freelance contract gig"
+      "freelance contract gig",
+      "does nitish do freelance work"
     ],
     "answer": "Yes, I am available for freelance projects and consulting roles in web development, ServiceNow config, or python-based scripting."
   },
@@ -264,8 +264,8 @@
     ],
     "alternatives": [
       "what is your linkedin profile link",
-      "tell me about your linkedin profile link",
       "about linkedin",
+      "tell me about your linkedin profile link",
       "explain your linkedin profile link",
       "linkedin social"
     ],
@@ -280,11 +280,11 @@
       "code"
     ],
     "alternatives": [
-      "about github",
       "what is your github profile link",
+      "explain your github profile link",
       "tell me about your github profile link",
-      "github code",
-      "explain your github profile link"
+      "about github",
+      "github code"
     ],
     "answer": "My GitHub is github.com/Nitish-vattikuti."
   },
@@ -299,10 +299,10 @@
     ],
     "alternatives": [
       "resume cv download",
-      "how can i download your resume",
-      "about resume"
+      "about resume",
+      "how can i download your resume"
     ],
-    "answer": "You can download my resume directly using my [Google Drive Link](https://drive.google.com/file/d/1yC3-st8W7wKJDJqs0-6cSaWh14MaaeE-/view?usp=sharing)."
+    "answer": "You can download my resume directly using my [Google Drive Link](https://drive.google.com/file/d/1YWxkSYy0Uc1yHMIZVNFOItWxh7xBzqnR/view?usp=sharing)."
   },
   {
     "id": 19,
@@ -314,12 +314,12 @@
       "status"
     ],
     "alternatives": [
-      "student professional status",
       "about student",
       "is nitish a student or a professional",
+      "student professional status",
       "are you a student or a professional"
     ],
-    "answer": "I am currently both: a pre-final year BTech Computer Science student at MVGR College of Engineering and a Software Engineering Intern at Vantiris Technologies LLP."
+    "answer": "I am currently both: a pre-final year BTech Computer Science student at MVGR College of Engineering, a Technical Intern at DRDO CABS, and a Software Engineering Intern at Vantiris Technologies LLP."
   },
   {
     "id": 20,
@@ -350,8 +350,8 @@
     ],
     "alternatives": [
       "philosophy think engineering",
-      "what drives your engineering philosophy",
-      "about philosophy"
+      "about philosophy",
+      "what drives your engineering philosophy"
     ],
     "answer": "I believe in building practical, high-performance, and decentralized solutions that solve real-world problems while respecting hardware boundaries (like SWaP and data privacy)."
   },
@@ -365,11 +365,11 @@
       "method"
     ],
     "alternatives": [
-      "method for approach a new software problem",
+      "how to approach a new software problem",
       "approach solve method",
-      "how do you approach a new software problem",
       "about approach",
-      "how to approach a new software problem"
+      "method for approach a new software problem",
+      "how do you approach a new software problem"
     ],
     "answer": "I start by fully understanding user requirements, analyzing hardware or network boundaries, creating modular designs, executing clean code, and performing continuous build and performance testing."
   },
@@ -383,8 +383,8 @@
       "career"
     ],
     "alternatives": [
-      "goals future career",
       "about goals",
+      "goals future career",
       "what are your career goals"
     ],
     "answer": "I aim to establish myself as a senior software engineer specialized in full-stack web platforms, machine learning automation, and ServiceNow enterprise architectures."
@@ -403,7 +403,7 @@
       "standout unique skills",
       "what makes you stand out as a developer"
     ],
-    "answer": "I combine strong core CS foundations (BTech) with professional ServiceNow developer credentials (CAD/CSA) and hands-on production internship experience (Vantiris)."
+    "answer": "I combine strong core CS foundations (BTech) with professional ServiceNow developer credentials (CAD/CSA) and hands-on internship experience at DRDO CABS (C++/Qt) and Vantiris (web scaling)."
   },
   {
     "id": 25,
@@ -415,8 +415,8 @@
       "message"
     ],
     "alternatives": [
-      "about contact",
       "contact reach message",
+      "about contact",
       "how do i contact you"
     ],
     "answer": "You can reach me via email at 1896nitishvattikuti@gmail.com or by phone at +91 8885251896. You can also view my LinkedIn or GitHub."
@@ -433,9 +433,9 @@
       "school"
     ],
     "alternatives": [
+      "education academic studies",
       "about education",
-      "tell me about your education.",
-      "education academic studies"
+      "tell me about your education."
     ],
     "answer": "I am pursuing a Bachelor of Technology (BTech) in Computer Science and Engineering at MVGR College of Engineering, Vizianagaram. I have a current CGPA of 7.59 and expect to graduate in May 2027."
   },
@@ -465,11 +465,11 @@
       "course"
     ],
     "alternatives": [
-      "explain your degree",
+      "what is your degree",
       "degree btech course",
       "about degree",
       "tell me about your degree",
-      "what is your degree"
+      "explain your degree"
     ],
     "answer": "I am pursuing a Bachelor of Technology (BTech) in Computer Science and Engineering."
   },
@@ -485,8 +485,8 @@
     "alternatives": [
       "about graduation",
       "graduation graduate year",
-      "tell me about your expected graduation date",
       "explain your expected graduation date",
+      "tell me about your expected graduation date",
       "what is your expected graduation date"
     ],
     "answer": "I am expected to graduate in May 2027."
@@ -501,11 +501,11 @@
       "percentage"
     ],
     "alternatives": [
-      "cgpa grades percentage",
-      "about cgpa",
-      "what is your current cgpa",
       "tell me about your current cgpa",
-      "explain your current cgpa"
+      "what is your current cgpa",
+      "explain your current cgpa",
+      "cgpa grades percentage",
+      "about cgpa"
     ],
     "answer": "My current cumulative GPA is 7.59."
   },
@@ -519,8 +519,8 @@
       "classes"
     ],
     "alternatives": [
-      "what subjects did you study in college",
       "subjects coursework classes",
+      "what subjects did you study in college",
       "about subjects"
     ],
     "answer": "My relevant coursework includes Data Structures & Algorithms (DSA), Operating Systems (OS), Database Management Systems (DBMS), Computer Networks, OOP (C++/Java), and AI-ML."
@@ -535,8 +535,8 @@
       "algorithms"
     ],
     "alternatives": [
-      "have you taken a course on data structures",
       "dsa data structures algorithms",
+      "have you taken a course on data structures",
       "about dsa"
     ],
     "answer": "Yes, DSA is a core subject in my BTech program. I study stacks, queues, trees, graphs, and search/sort algorithm complexities."
@@ -551,8 +551,8 @@
     ],
     "alternatives": [
       "os operating systems",
-      "did you study operating systems",
-      "about os"
+      "about os",
+      "did you study operating systems"
     ],
     "answer": "Yes, I studied OS, covering processes, threads, synchronization, memory management, and file systems."
   },
@@ -566,9 +566,9 @@
       "sql"
     ],
     "alternatives": [
+      "have you studied database management",
       "dbms database sql",
-      "about dbms",
-      "have you studied database management"
+      "about dbms"
     ],
     "answer": "Yes, my coursework covers DBMS concepts, ER modeling, SQL querying, transaction safety, and indexing."
   },
@@ -582,9 +582,9 @@
       "tcp"
     ],
     "alternatives": [
-      "about networks",
       "networks routing tcp",
-      "have you studied computer networks"
+      "have you studied computer networks",
+      "about networks"
     ],
     "answer": "Yes, I studied Computer Networks, focusing on the TCP/IP stack, routing protocols, sockets, and network security."
   },
@@ -598,11 +598,11 @@
       "java"
     ],
     "alternatives": [
-      "tell me about your proficiency in object-oriented programming",
-      "oop c++ java",
-      "explain your proficiency in object-oriented programming",
       "about oop",
-      "what is your proficiency in object-oriented programming"
+      "oop c++ java",
+      "what is your proficiency in object-oriented programming",
+      "tell me about your proficiency in object-oriented programming",
+      "explain your proficiency in object-oriented programming"
     ],
     "answer": "I am highly proficient in OOP, which I studied through C++ and Java, covering inheritance, polymorphism, encapsulation, and abstraction."
   },
@@ -616,8 +616,8 @@
       "learning"
     ],
     "alternatives": [
-      "ai ml learning",
       "did you study artificial intelligence and machine learning",
+      "ai ml learning",
       "about ai"
     ],
     "answer": "Yes, I took coursework in AI-ML, studying supervised/unsupervised algorithms, neural networks, and model evaluations."
@@ -632,11 +632,11 @@
       "location"
     ],
     "alternatives": [
-      "where is mvgr college located",
-      "where can i find mvgr college located",
       "about mvgr",
       "location of mvgr college located",
-      "mvgr vizianagaram location"
+      "mvgr vizianagaram location",
+      "where can i find mvgr college located",
+      "where is mvgr college located"
     ],
     "answer": "MVGR College of Engineering is located in Vizianagaram, Andhra Pradesh, India."
   },
@@ -650,10 +650,10 @@
       "full name"
     ],
     "alternatives": [
-      "what is the full name of mvgr college",
-      "about mvgr",
       "explain the full name of mvgr college",
+      "about mvgr",
       "mvgr college full name",
+      "what is the full name of mvgr college",
       "tell me about the full name of mvgr college"
     ],
     "answer": "MVGR stands for Maharaj Vijayaram Gajapathi Raj College of Engineering."
@@ -700,10 +700,10 @@
       "azure"
     ],
     "alternatives": [
+      "is nitish learning about cloud computing in college",
       "are you learning about cloud computing in college",
       "about cloud",
-      "cloud aws azure",
-      "is nitish learning about cloud computing in college"
+      "cloud aws azure"
     ],
     "answer": "Yes, my CSE coursework covers cloud service models, virtualization, and distributed systems, which I supplement with my ServiceNow CSA/CAD cloud expertise."
   },
@@ -717,9 +717,9 @@
       "years"
     ],
     "alternatives": [
-      "how long is your btech program",
+      "about btech",
       "btech duration years",
-      "about btech"
+      "how long is your btech program"
     ],
     "answer": "The BTech program is a standard 4-year undergraduate degree."
   },
@@ -749,10 +749,10 @@
       "exams"
     ],
     "alternatives": [
-      "about backlogs",
       "backlogs failed exams",
-      "do you have any academic backlogs",
-      "does nitish have any academic backlogs"
+      "about backlogs",
+      "does nitish have any academic backlogs",
+      "do you have any academic backlogs"
     ],
     "answer": "No, I have a clean academic record with zero active backlogs and a CGPA of 7.59."
   },
@@ -766,9 +766,9 @@
       "system"
     ],
     "alternatives": [
-      "design architecture system",
+      "about design",
       "did you study system design in college",
-      "about design"
+      "design architecture system"
     ],
     "answer": "Yes, I studied System Analysis and Design, covering UML diagrams, modular architecture, and software development life cycles (SDLC)."
   },
@@ -783,10 +783,10 @@
     ],
     "alternatives": [
       "scale gpa cgpa",
-      "explain your college cgpa scale",
-      "about scale",
       "what is your college cgpa scale",
-      "tell me about your college cgpa scale"
+      "explain your college cgpa scale",
+      "tell me about your college cgpa scale",
+      "about scale"
     ],
     "answer": "My CGPA is on a standard scale of 10.0, where I hold a 7.59."
   },
@@ -801,8 +801,8 @@
     ],
     "alternatives": [
       "what programming languages did you learn in college",
-      "about languages",
-      "languages java c++"
+      "languages java c++",
+      "about languages"
     ],
     "answer": "I formally learned C, C++, Java, Python, and SQL through my university curriculum."
   },
@@ -816,9 +816,9 @@
       "clubs"
     ],
     "alternatives": [
-      "extracurricular activities clubs",
-      "about extracurricular",
       "does nitish participate in extra-curricular activities in college",
+      "about extracurricular",
+      "extracurricular activities clubs",
       "do you participate in extra-curricular activities in college"
     ],
     "answer": "Yes, I participate in technical clubs, hackathons, and development forums within MVGR College."
@@ -832,11 +832,11 @@
       "website"
     ],
     "alternatives": [
-      "what is your college's official website",
-      "explain your college's official website",
-      "mvgr website",
+      "tell me about your college's official website",
       "about mvgr",
-      "tell me about your college's official website"
+      "mvgr website",
+      "explain your college's official website",
+      "what is your college's official website"
     ],
     "answer": "MVGR College's official portal is www.mvgrce.edu.in."
   },
@@ -850,8 +850,8 @@
       "practice"
     ],
     "alternatives": [
-      "coursework theory practice",
       "about coursework",
+      "coursework theory practice",
       "how does college coursework help your development projects"
     ],
     "answer": "Theoretical concepts like DSA help me optimize A* search algorithms in my UAV project, and DBMS theories guide my database designs in MySQL."
@@ -867,11 +867,11 @@
       "internship"
     ],
     "alternatives": [
-      "experience work job",
       "about experience",
+      "experience work job",
       "tell me about your work experience."
     ],
-    "answer": "I am working as a Software Engineering Intern at Vantiris Technologies LLP (Remote, India, since February 2026). My responsibilities include web optimization and scaling, UI/UX redesigns, Git workflows, and engineering documentation."
+    "answer": "I have two internship experiences: first, as a Technical Intern at DRDO – Centre for Airborne Systems (CABS) since July 2026, focusing on C++ and Qt-based GUI software development; and second, as a Software Engineering Intern at Vantiris Technologies LLP since February 2026, working on web optimization, scaling, and UI/UX redesigns."
   },
   {
     "id": 47,
@@ -887,7 +887,7 @@
       "where do you work",
       "about work"
     ],
-    "answer": "I am working as a Software Engineering Intern at Vantiris Technologies LLP."
+    "answer": "I am currently working as a Technical Intern at DRDO – Centre for Airborne Systems (CABS) in Bengaluru, and as a Software Engineering Intern at Vantiris Technologies LLP."
   },
   {
     "id": 48,
@@ -898,11 +898,11 @@
       "company"
     ],
     "alternatives": [
-      "what is vantiris technologies",
-      "explain vantiris technologies",
-      "about vantiris",
       "vantiris company",
-      "tell me about vantiris technologies"
+      "about vantiris",
+      "tell me about vantiris technologies",
+      "explain vantiris technologies",
+      "what is vantiris technologies"
     ],
     "answer": "Vantiris Technologies LLP is a software development and consulting company based in India."
   },
@@ -916,11 +916,11 @@
       "intern"
     ],
     "alternatives": [
-      "role job intern",
-      "about role",
-      "explain your role at vantiris",
       "what is your role at vantiris",
-      "tell me about your role at vantiris"
+      "about role",
+      "tell me about your role at vantiris",
+      "role job intern",
+      "explain your role at vantiris"
     ],
     "answer": "My role is Software Engineering Intern, focusing on front-end web platforms and project lifecycle documentation."
   },
@@ -934,9 +934,9 @@
       "date"
     ],
     "alternatives": [
-      "about start",
       "when did you start your internship at vantiris",
-      "start timeline date"
+      "start timeline date",
+      "about start"
     ],
     "answer": "I started my internship at Vantiris Technologies in February 2026."
   },
@@ -951,8 +951,8 @@
     ],
     "alternatives": [
       "remote office onsite",
-      "is your internship remote or on-site",
-      "about remote"
+      "about remote",
+      "is your internship remote or on-site"
     ],
     "answer": "My internship at Vantiris Technologies is fully remote."
   },
@@ -982,9 +982,9 @@
       "apet"
     ],
     "alternatives": [
+      "what logistics platforms did you work on at vantiris",
       "about logistics",
-      "logistics platforms apet",
-      "what logistics platforms did you work on at vantiris"
+      "logistics platforms apet"
     ],
     "answer": "I developed and optimized responsive web architectures for logistics platforms like APET Logistics and Marine Commercial Ltd."
   },
@@ -998,11 +998,11 @@
       "project"
     ],
     "alternatives": [
-      "tell me about apet logistics",
-      "apet logistics project",
-      "about apet",
       "explain apet logistics",
-      "what is apet logistics"
+      "apet logistics project",
+      "what is apet logistics",
+      "about apet",
+      "tell me about apet logistics"
     ],
     "answer": "APET Logistics is one of the international logistics platforms I worked on during my internship, focus areas included performance tuning and responsive layouts."
   },
@@ -1016,10 +1016,10 @@
       "project"
     ],
     "alternatives": [
-      "about marine",
+      "marine commercial project",
       "tell me about marine commercial ltd",
       "what is marine commercial ltd",
-      "marine commercial project",
+      "about marine",
       "explain marine commercial ltd"
     ],
     "answer": "Marine Commercial Ltd is a commercial maritime logistics client platform that I optimized and deployed to Netlify during my internship."
@@ -1034,9 +1034,9 @@
       "scaling"
     ],
     "alternatives": [
-      "about optimization",
+      "how did you optimize web performance at vantiris",
       "optimization performance scaling",
-      "how did you optimize web performance at vantiris"
+      "about optimization"
     ],
     "answer": "I minimized asset payloads, restructured DOM trees, applied code optimization guidelines, and configured optimized Netlify environments for faster rendering."
   },
@@ -1050,9 +1050,9 @@
       "redesign"
     ],
     "alternatives": [
-      "ui ux redesign",
       "about ui",
-      "what does your ui/ux redesign work involve"
+      "what does your ui/ux redesign work involve",
+      "ui ux redesign"
     ],
     "answer": "I overhaul legacy, raw HTML client applications into modern responsive layouts that scale smoothly across desktop, tablet, and mobile devices."
   },
@@ -1067,10 +1067,10 @@
     ],
     "alternatives": [
       "collaborate git team",
+      "how to collaborate with other developers at vantiris",
       "method for collaborate with other developers at vantiris",
-      "about collaborate",
       "how do you collaborate with other developers at vantiris",
-      "how to collaborate with other developers at vantiris"
+      "about collaborate"
     ],
     "answer": "We coordinate features through strict Git/GitHub branching models, pull request reviews, and weekly technical synchronization meetings."
   },
@@ -1085,8 +1085,8 @@
     ],
     "alternatives": [
       "about git",
-      "what version control tools do you use at work",
-      "git github vcs"
+      "git github vcs",
+      "what version control tools do you use at work"
     ],
     "answer": "I use Git and GitHub extensively for codebase version control, code review, and CI/CD triggers."
   },
@@ -1100,9 +1100,9 @@
       "architecture"
     ],
     "alternatives": [
-      "about documentation",
+      "documentation lifecycle architecture",
       "did you write technical documentation at vantiris",
-      "documentation lifecycle architecture"
+      "about documentation"
     ],
     "answer": "Yes, I documented comprehensive project lifecycles, backend logic, and architectural trade-offs to establish long-term engineering guidelines."
   },
@@ -1120,7 +1120,7 @@
       "about first",
       "first experience past"
     ],
-    "answer": "Yes, this internship at Vantiris Technologies is my first formal industry role, complementing my personal development projects."
+    "answer": "No, I started as a Software Engineering Intern at Vantiris Technologies LLP in February 2026, and later joined DRDO – Centre for Airborne Systems (CABS) as a Technical Intern in July 2026."
   },
   {
     "id": 62,
@@ -1132,9 +1132,9 @@
       "deploy"
     ],
     "alternatives": [
-      "what hosting environments did you deploy to during your internship",
       "netlify hosting deploy",
-      "about netlify"
+      "about netlify",
+      "what hosting environments did you deploy to during your internship"
     ],
     "answer": "I configured and deployed responsive client platforms to optimized Netlify hosting environments."
   },
@@ -1148,9 +1148,9 @@
       "html"
     ],
     "alternatives": [
-      "about frontend",
       "frontend tech html",
-      "what frontend technologies do you use at vantiris"
+      "what frontend technologies do you use at vantiris",
+      "about frontend"
     ],
     "answer": "I work primarily with HTML, CSS, JavaScript, and responsive layouts to modernize legacy codebases."
   },
@@ -1164,8 +1164,8 @@
       "long"
     ],
     "alternatives": [
-      "how long is your vantiris internship",
       "about duration",
+      "how long is your vantiris internship",
       "duration length long"
     ],
     "answer": "My internship is ongoing; I started in February 2026 and continue to contribute to their frontend projects."
@@ -1196,8 +1196,8 @@
       "learning"
     ],
     "alternatives": [
-      "how does this internship impact your software development skills",
       "skills impact learning",
+      "how does this internship impact your software development skills",
       "about skills"
     ],
     "answer": "It has taught me how to work on production codebases, manage legacy transformations, write professional documentation, and work under deadlines."
@@ -1211,9 +1211,9 @@
       "companies"
     ],
     "alternatives": [
-      "who are the clients for the platforms you built",
       "about clients",
-      "clients companies"
+      "clients companies",
+      "who are the clients for the platforms you built"
     ],
     "answer": "The primary clients include maritime and transport entities, notably APET Logistics and Marine Commercial Ltd."
   },
@@ -1228,9 +1228,9 @@
     ],
     "alternatives": [
       "do you attend weekly sync meetings at vantiris",
+      "about sync",
       "does nitish attend weekly sync meetings at vantiris",
-      "sync meetings weekly",
-      "about sync"
+      "sync meetings weekly"
     ],
     "answer": "Yes, I participate in weekly syncs to coordinate codebase changes, review sprint goals, and solve technical hurdles."
   },
@@ -1244,11 +1244,11 @@
       "services"
     ],
     "alternatives": [
+      "explain the business model of vantiris",
       "vantiris business services",
       "what is the business model of vantiris",
       "about vantiris",
-      "tell me about the business model of vantiris",
-      "explain the business model of vantiris"
+      "tell me about the business model of vantiris"
     ],
     "answer": "Vantiris Technologies is an LLP focused on engineering consulting, custom software creation, and enterprise web solutions."
   },
@@ -1278,11 +1278,11 @@
       "html"
     ],
     "alternatives": [
-      "how to handle legacy code modernization",
       "how do you handle legacy code modernization",
-      "method for handle legacy code modernization",
       "about legacy",
-      "legacy modernize html"
+      "method for handle legacy code modernization",
+      "legacy modernize html",
+      "how to handle legacy code modernization"
     ],
     "answer": "I extract the core functionalities of old HTML sites, design a responsive CSS layout, and re-implement them with clean modular structures."
   },
@@ -1296,8 +1296,8 @@
     ],
     "alternatives": [
       "about success",
-      "success achievement",
-      "what was your biggest success at vantiris"
+      "what was your biggest success at vantiris",
+      "success achievement"
     ],
     "answer": "Successfully modernizing and deploying Marine Commercial Ltd and APET Logistics platforms to Netlify with improved performance metrics."
   },
@@ -1328,11 +1328,11 @@
       "git"
     ],
     "alternatives": [
-      "merge conflict git",
-      "method for manage merge conflicts in git",
       "how do you manage merge conflicts in git",
+      "how to manage merge conflicts in git",
       "about merge",
-      "how to manage merge conflicts in git"
+      "merge conflict git",
+      "method for manage merge conflicts in git"
     ],
     "answer": "I resolve conflicts by pulling the latest dev branch, rebasing or merging carefully, and running tests locally to verify compilation."
   },
@@ -1347,8 +1347,8 @@
     ],
     "alternatives": [
       "location office remote",
-      "is vantiris located in visakhapatnam",
-      "about location"
+      "about location",
+      "is vantiris located in visakhapatnam"
     ],
     "answer": "Vantiris is based in India, but I work remote from Visakhapatnam."
   },
@@ -1362,11 +1362,94 @@
       "verify"
     ],
     "alternatives": [
-      "about check",
       "check see verify",
+      "about check",
       "how can i check the work you did at vantiris"
     ],
     "answer": "The resulting platforms (APET Logistics, Marine Commercial) are deployed on Netlify. You can view my role details and code integration highlights on my resume."
+  },
+  {
+    "id": 77,
+    "category": "experience",
+    "question": "Tell me about your DRDO CABS internship.",
+    "keywords": [
+      "drdo",
+      "cabs",
+      "airborne"
+    ],
+    "alternatives": [
+      "drdo cabs airborne",
+      "tell me about your drdo cabs internship.",
+      "about drdo"
+    ],
+    "answer": "I am a Technical Intern at DRDO – Centre for Airborne Systems (CABS) in Bengaluru since July 2026. I contribute to a C++ and Qt-based software application that processes and structures machine-generated data into a human-readable format. I also work with Go2Monitor for data monitoring and analysis."
+  },
+  {
+    "id": 78,
+    "category": "experience",
+    "question": "What are your key responsibilities at DRDO?",
+    "keywords": [
+      "responsibilities",
+      "drdo",
+      "cabs"
+    ],
+    "alternatives": [
+      "responsibilities drdo cabs",
+      "what are your key responsibilities at drdo",
+      "about responsibilities"
+    ],
+    "answer": "My responsibilities at DRDO CABS include contributing to the development of a C++ and Qt-based application, building GUI components in Qt, implementing core data-processing logic, and using Go2Monitor as part of the analysis workflow."
+  },
+  {
+    "id": 79,
+    "category": "experience",
+    "question": "What is DRDO – Centre for Airborne Systems?",
+    "keywords": [
+      "cabs",
+      "drdo",
+      "what is"
+    ],
+    "alternatives": [
+      "tell me about drdo – centre for airborne systems",
+      "what is drdo – centre for airborne systems",
+      "about cabs",
+      "cabs drdo what is",
+      "explain drdo – centre for airborne systems"
+    ],
+    "answer": "CABS is a premier laboratory of the Defence Research and Development Organisation (DRDO) located in Bengaluru, specializing in Airborne Surveillance Systems, AEW&C, and related engineering systems."
+  },
+  {
+    "id": 80,
+    "category": "experience",
+    "question": "What technologies do you use at DRDO CABS?",
+    "keywords": [
+      "technologies",
+      "drdo",
+      "c++",
+      "qt"
+    ],
+    "alternatives": [
+      "about technologies",
+      "technologies drdo c++",
+      "what technologies do you use at drdo cabs"
+    ],
+    "answer": "I work primarily with C++ for application logic and Qt for GUI development, and use Go2Monitor for data monitoring, visualization, and analysis."
+  },
+  {
+    "id": 81,
+    "category": "experience",
+    "question": "What does Go2Monitor do in your DRDO workflow?",
+    "keywords": [
+      "go2monitor",
+      "workflow",
+      "drdo"
+    ],
+    "alternatives": [
+      "what does go2monitor do in your drdo workflow",
+      "go2monitor workflow drdo",
+      "about go2monitor"
+    ],
+    "answer": "Go2Monitor is integrated into our workflow for data monitoring, visualization, and analysis, helping process and interpret machine-generated data."
   },
   {
     "id": 76,
@@ -1379,9 +1462,9 @@
       "cad"
     ],
     "alternatives": [
+      "tell me about your servicenow skills.",
       "servicenow skills csa",
-      "about servicenow",
-      "tell me about your servicenow skills."
+      "about servicenow"
     ],
     "answer": "I am certified as both a ServiceNow Certified System Administrator (CSA) and a ServiceNow Certified Application Developer (CAD) in 2026. I write scripts, design scoped apps, and build workflows."
   },
@@ -1396,9 +1479,9 @@
     ],
     "alternatives": [
       "about servicenow",
-      "are you servicenow certified",
+      "servicenow certified csa",
       "is nitish servicenow certified",
-      "servicenow certified csa"
+      "are you servicenow certified"
     ],
     "answer": "Yes, I am certified as a ServiceNow Certified System Administrator (CSA) and a ServiceNow Certified Application Developer (CAD)."
   },
@@ -1411,9 +1494,9 @@
       "system administrator"
     ],
     "alternatives": [
-      "what does servicenow csa stand for",
+      "csa system administrator",
       "about csa",
-      "csa system administrator"
+      "what does servicenow csa stand for"
     ],
     "answer": "ServiceNow CSA stands for Certified System Administrator. It proves proficiency in configuring and managing a ServiceNow instance."
   },
@@ -1443,9 +1526,9 @@
       "certified"
     ],
     "alternatives": [
-      "when did you get your servicenow certifications",
+      "about year",
       "year date certified",
-      "about year"
+      "when did you get your servicenow certifications"
     ],
     "answer": "I obtained both my CSA and CAD certifications in 2026."
   },
@@ -1458,9 +1541,9 @@
       "csa certificate"
     ],
     "alternatives": [
-      "csa link csa certificate",
       "is there a verification link for your servicenow csa certification",
-      "about csa link"
+      "about csa link",
+      "csa link csa certificate"
     ],
     "answer": "Yes, you can view my ServiceNow CSA credential on my resume or verify it via the ServiceNow Webassessor profile link."
   },
@@ -1489,8 +1572,8 @@
       "skills"
     ],
     "alternatives": [
-      "what skills do you have as a servicenow administrator",
       "admin configuration skills",
+      "what skills do you have as a servicenow administrator",
       "about admin"
     ],
     "answer": "I can configure lists, forms, UI policies, business rules, client scripts, flow designers, user roles, security access, and notifications."
@@ -1538,8 +1621,8 @@
     ],
     "alternatives": [
       "have you written scripts in servicenow",
-      "scripting javascript includes",
-      "about scripting"
+      "about scripting",
+      "scripting javascript includes"
     ],
     "answer": "Yes, I write JavaScript client-side (Client Scripts, UI Policies) and server-side (Business Rules, Script Includes, UI Actions) in ServiceNow."
   },
@@ -1552,11 +1635,11 @@
       "automation"
     ],
     "alternatives": [
-      "flow designer automation",
+      "tell me about flow designer in servicenow",
       "explain flow designer in servicenow",
-      "what is flow designer in servicenow",
       "about flow designer",
-      "tell me about flow designer in servicenow"
+      "flow designer automation",
+      "what is flow designer in servicenow"
     ],
     "answer": "Flow Designer is a ServiceNow interface that enables process automation by creating sequences of actions (flows) without writing complex scripts."
   },
@@ -1569,11 +1652,11 @@
       "server script"
     ],
     "alternatives": [
-      "tell me about a servicenow business rule",
       "about business rule",
       "explain a servicenow business rule",
-      "what is a servicenow business rule",
-      "business rule server script"
+      "business rule server script",
+      "tell me about a servicenow business rule",
+      "what is a servicenow business rule"
     ],
     "answer": "A Business Rule is a server-side JavaScript that runs when a record is displayed, inserted, updated, or deleted."
   },
@@ -1586,11 +1669,11 @@
       "client side"
     ],
     "alternatives": [
-      "about client script",
       "client script client side",
-      "tell me about a servicenow client script",
       "what is a servicenow client script",
-      "explain a servicenow client script"
+      "tell me about a servicenow client script",
+      "explain a servicenow client script",
+      "about client script"
     ],
     "answer": "A Client Script is client-side JavaScript that runs in the browser when a form loads, changes, or submits to handle dynamic UI alterations."
   },
@@ -1604,9 +1687,9 @@
     ],
     "alternatives": [
       "tell me about a servicenow script include",
-      "script include reusable",
       "explain a servicenow script include",
       "what is a servicenow script include",
+      "script include reusable",
       "about script include"
     ],
     "answer": "A Script Include is a reusable server-side JavaScript library that defines classes or functions, often called from Client Scripts via GlideAjax."
@@ -1620,11 +1703,11 @@
       "database"
     ],
     "alternatives": [
-      "explain gliderecord in servicenow",
+      "what is gliderecord in servicenow",
       "gliderecord database",
-      "about gliderecord",
+      "explain gliderecord in servicenow",
       "tell me about gliderecord in servicenow",
-      "what is gliderecord in servicenow"
+      "about gliderecord"
     ],
     "answer": "GlideRecord is the ServiceNow database class used for database operations (Create, Read, Update, Delete) instead of direct SQL queries."
   },
@@ -1638,10 +1721,10 @@
     ],
     "alternatives": [
       "explain glidesystem in servicenow",
-      "glidesystem gs",
       "tell me about glidesystem in servicenow",
       "what is glidesystem in servicenow",
-      "about glidesystem"
+      "about glidesystem",
+      "glidesystem gs"
     ],
     "answer": "GlideSystem (referenced as 'gs') is a server-side API providing system information, user properties, logging, and date-time utilities."
   },
@@ -1654,10 +1737,10 @@
       "ajax"
     ],
     "alternatives": [
-      "about glideajax",
-      "glideajax ajax",
       "what is glideajax in servicenow",
+      "about glideajax",
       "explain glideajax in servicenow",
+      "glideajax ajax",
       "tell me about glideajax in servicenow"
     ],
     "answer": "GlideAjax is a client-side API that enables Client Scripts to query the server asynchronously by calling Script Includes and receiving responses."
@@ -1671,11 +1754,11 @@
       "rules"
     ],
     "alternatives": [
-      "ui policy rules",
-      "explain a ui policy in servicenow",
-      "tell me about a ui policy in servicenow",
       "about ui policy",
-      "what is a ui policy in servicenow"
+      "what is a ui policy in servicenow",
+      "tell me about a ui policy in servicenow",
+      "explain a ui policy in servicenow",
+      "ui policy rules"
     ],
     "answer": "A UI Policy is a client-side configuration that dynamically changes form fields (Read-Only, Mandatory, Visible) based on conditions, without writing code."
   },
@@ -1688,11 +1771,11 @@
       "button"
     ],
     "alternatives": [
-      "explain a ui action in servicenow",
       "what is a ui action in servicenow",
+      "explain a ui action in servicenow",
       "about ui action",
-      "tell me about a ui action in servicenow",
-      "ui action button"
+      "ui action button",
+      "tell me about a ui action in servicenow"
     ],
     "answer": "A UI Action is a configuration that creates buttons, links, or context menus on forms or lists, executing client-side or server-side scripts."
   },
@@ -1706,8 +1789,8 @@
       "api"
     ],
     "alternatives": [
-      "about integrationhub",
       "integrationhub rest api",
+      "about integrationhub",
       "have you worked on servicenow integrationhub"
     ],
     "answer": "Yes, I configure IntegrationHub spokes to connect ServiceNow instances to external third-party systems using REST or SOAP APIs."
@@ -1722,10 +1805,10 @@
     ],
     "alternatives": [
       "what is an update set in servicenow",
-      "about update set",
-      "explain an update set in servicenow",
+      "update set deployment",
       "tell me about an update set in servicenow",
-      "update set deployment"
+      "about update set",
+      "explain an update set in servicenow"
     ],
     "answer": "An Update Set is a group of configuration changes that can be tracked, exported, and imported into another ServiceNow instance for deployment."
   },
@@ -1738,10 +1821,10 @@
       "it service"
     ],
     "alternatives": [
-      "about itsm",
-      "itsm it service",
       "explain servicenow itsm",
+      "itsm it service",
       "tell me about servicenow itsm",
+      "about itsm",
       "what is servicenow itsm"
     ],
     "answer": "ITSM stands for IT Service Management, covering core modules like Incident, Problem, Change, and Request Management which I configure."
@@ -1755,11 +1838,11 @@
       "operations"
     ],
     "alternatives": [
-      "explain servicenow itom",
-      "what is servicenow itom",
-      "about itom",
+      "itom operations",
       "tell me about servicenow itom",
-      "itom operations"
+      "about itom",
+      "explain servicenow itom",
+      "what is servicenow itom"
     ],
     "answer": "ITOM is IT Operations Management, covering Discovery, Service Mapping, and Event Management to automate operational environments."
   },
@@ -1773,11 +1856,11 @@
       "access"
     ],
     "alternatives": [
-      "security acl access",
-      "how do you handle security in servicenow",
       "method for handle security in servicenow",
       "about security",
-      "how to handle security in servicenow"
+      "how to handle security in servicenow",
+      "security acl access",
+      "how do you handle security in servicenow"
     ],
     "answer": "I configure Access Control Lists (ACLs), roles, groups, and context-specific rules to enforce strict data governance and user permissions."
   },
@@ -1791,11 +1874,11 @@
       "client script"
     ],
     "alternatives": [
-      "tell me about the difference between a ui policy and a client script",
-      "about difference",
-      "difference policy client script",
       "what is the difference between a ui policy and a client script",
-      "explain the difference between a ui policy and a client script"
+      "explain the difference between a ui policy and a client script",
+      "difference policy client script",
+      "about difference",
+      "tell me about the difference between a ui policy and a client script"
     ],
     "answer": "UI Policies are declarative rules for field visibility/mandatoriness, whereas Client Scripts allow full JavaScript coding for complex client-side validations."
   },
@@ -1809,10 +1892,10 @@
     ],
     "alternatives": [
       "explain a servicenow record producer",
-      "what is a servicenow record producer",
-      "about record producer",
+      "record producer portal",
       "tell me about a servicenow record producer",
-      "record producer portal"
+      "about record producer",
+      "what is a servicenow record producer"
     ],
     "answer": "A Record Producer is a user-friendly catalog item that allows users to create records (like incidents or facilities requests) directly from the Service Portal."
   },
@@ -1825,9 +1908,9 @@
       "scoped"
     ],
     "alternatives": [
+      "about custom app",
       "custom app scoped",
-      "have you built custom applications on servicenow",
-      "about custom app"
+      "have you built custom applications on servicenow"
     ],
     "answer": "Yes, utilizing my CAD training, I build custom scoped applications with unique tables, scripts, and security controls isolated from global configurations."
   },
@@ -1842,8 +1925,8 @@
     ],
     "alternatives": [
       "what servicenow releases are you familiar with",
-      "release washington xanadu",
-      "about release"
+      "about release",
+      "release washington xanadu"
     ],
     "answer": "I am trained and certified on modern releases, including Washington DC and Xanadu, understanding their latest feature sets."
   },
@@ -1857,9 +1940,9 @@
       "enterprise"
     ],
     "alternatives": [
+      "fit paas enterprise",
       "how does servicenow fit into your general software development",
-      "about fit",
-      "fit paas enterprise"
+      "about fit"
     ],
     "answer": "ServiceNow gives me enterprise-grade PaaS experience, complementing my custom full-stack development skills (Python/JS/Docker) with cloud business logic workflow tools."
   },
@@ -1872,10 +1955,10 @@
       "servicenow.png"
     ],
     "alternatives": [
-      "icon servicenow.png",
-      "location of your servicenow icon sourced from",
-      "about icon",
       "where is your servicenow icon sourced from",
+      "location of your servicenow icon sourced from",
+      "icon servicenow.png",
+      "about icon",
       "where can i find your servicenow icon sourced from"
     ],
     "answer": "My portfolio uses a custom ServiceNow PNG icon ('servicenow.png') stored locally in 'src/assets/' and configured to render without dark-mode color inverting."
@@ -1890,11 +1973,11 @@
       "drone"
     ],
     "alternatives": [
+      "uav simulation drone",
+      "tell me about the uav simulation project",
       "about uav",
       "explain the uav simulation project",
-      "what is the uav simulation project",
-      "uav simulation drone",
-      "tell me about the uav simulation project"
+      "what is the uav simulation project"
     ],
     "answer": "The Autonomous UAV SIL Simulation is an avionics guidance and 3D path planning Software-in-the-Loop (SIL) simulation that tests flight guidance under strict hardware constraints."
   },
@@ -1923,9 +2006,9 @@
       "uav"
     ],
     "alternatives": [
-      "python language uav",
+      "about python",
       "what programming language was used for the uav simulation",
-      "about python"
+      "python language uav"
     ],
     "answer": "The core simulation and path planning logic were built using Python."
   },
@@ -1939,9 +2022,9 @@
       "rrt*"
     ],
     "alternatives": [
-      "what path planning algorithms did you use in the uav project",
+      "algorithms a* rrt*",
       "about algorithms",
-      "algorithms a* rrt*"
+      "what path planning algorithms did you use in the uav project"
     ],
     "answer": "I optimized the 3D trajectory path planning using Weighted A* and Rapidly-exploring Random Trees Star (RRT*)."
   },
@@ -1955,8 +2038,8 @@
     ],
     "alternatives": [
       "weighted a* a star",
-      "why did you use weighted a* in the uav project",
-      "about weighted a*"
+      "about weighted a*",
+      "why did you use weighted a* in the uav project"
     ],
     "answer": "Weighted A* introduces a heuristic weight to accelerate path-finding searches, making it faster than standard A* while maintaining near-optimal routes suitable for real-time guidance."
   },
@@ -1969,9 +2052,9 @@
       "random trees"
     ],
     "alternatives": [
-      "rrt* random trees",
+      "why did you use rrt* in the uav project",
       "about rrt*",
-      "why did you use rrt* in the uav project"
+      "rrt* random trees"
     ],
     "answer": "RRT* is an incremental sampling-based algorithm that asymptotically converges to an optimal path, enabling the UAV to navigate through complex, high-dimensional obstacle layouts."
   },
@@ -1986,9 +2069,9 @@
     ],
     "alternatives": [
       "latency speed ms",
-      "about latency",
-      "explain the planning latency of your uav guidance system",
       "tell me about the planning latency of your uav guidance system",
+      "explain the planning latency of your uav guidance system",
+      "about latency",
       "what is the planning latency of your uav guidance system"
     ],
     "answer": "The trajectory path planning latency was optimized to compile in under 80 milliseconds (<= 80ms)."
@@ -2003,9 +2086,9 @@
       "stream"
     ],
     "alternatives": [
+      "about telemetry",
       "telemetry sockets stream",
-      "how does the telemetry stream work in the uav project",
-      "about telemetry"
+      "how does the telemetry stream work in the uav project"
     ],
     "answer": "Real-time telemetry (position, yaw, pitch, roll) is streamed between processes using a dual-process TCP/IP socket connection."
   },
@@ -2035,10 +2118,10 @@
       "performance"
     ],
     "alternatives": [
-      "about psutil",
-      "what is the role of psutil in the uav simulation",
-      "explain the role of psutil in the uav simulation",
       "tell me about the role of psutil in the uav simulation",
+      "what is the role of psutil in the uav simulation",
+      "about psutil",
+      "explain the role of psutil in the uav simulation",
       "psutil cpu performance"
     ],
     "answer": "I used psutil to monitor and log CPU utilization, memory footprints, and execution statistics during trajectory calculations."
@@ -2052,8 +2135,8 @@
       "hardware"
     ],
     "alternatives": [
-      "about swap",
       "swap hardware",
+      "about swap",
       "what does swap stand for in avionics"
     ],
     "answer": "SWaP stands for Size, Weight, and Power. These are the physical and electrical constraints that avionics systems must satisfy on a real UAV."
@@ -2083,9 +2166,9 @@
       "sense and avoid"
     ],
     "alternatives": [
+      "about saa",
       "what does saa stand for in your uav project",
-      "saa sense and avoid",
-      "about saa"
+      "saa sense and avoid"
     ],
     "answer": "SAA stands for Sense-and-Avoid, which is the system's ability to detect dynamic obstacles in the flight path and replan the trajectory to prevent collisions."
   },
@@ -2099,9 +2182,9 @@
       "gcs"
     ],
     "alternatives": [
+      "about visualizer",
       "how is the 3d trajectory visualized in the uav project",
-      "visualizer 3d gcs",
-      "about visualizer"
+      "visualizer 3d gcs"
     ],
     "answer": "It streams coordinates via sockets to a Web Ground Control Station (GCS) containing a 3D canvas path visualizer."
   },
@@ -2114,9 +2197,9 @@
       "container"
     ],
     "alternatives": [
-      "about docker",
       "docker container",
-      "did you use docker for the uav project"
+      "did you use docker for the uav project",
+      "about docker"
     ],
     "answer": "Yes, I containerized the Python simulation processes in Docker to ensure environment reproducibility and clean dependency packaging."
   },
@@ -2129,11 +2212,11 @@
       "processes"
     ],
     "alternatives": [
-      "what is the significance of dual-process decoupling in the uav project",
-      "tell me about the significance of dual-process decoupling in the uav project",
       "explain the significance of dual-process decoupling in the uav project",
+      "tell me about the significance of dual-process decoupling in the uav project",
+      "decoupling processes",
       "about decoupling",
-      "decoupling processes"
+      "what is the significance of dual-process decoupling in the uav project"
     ],
     "answer": "By decoupling the trajectory planning process from the visualization/logging process, a visual lag does not block or crash the safety-critical guidance calculations."
   },
@@ -2163,11 +2246,11 @@
       "demo"
     ],
     "alternatives": [
-      "where can i find the live demo for the uav guidance project",
+      "where is the live demo for the uav guidance project",
       "live render demo",
       "about live",
-      "location of the live demo for the uav guidance project",
-      "where is the live demo for the uav guidance project"
+      "where can i find the live demo for the uav guidance project",
+      "location of the live demo for the uav guidance project"
     ],
     "answer": "You can access the live demo running on Render at https://autonomous-uav-guidance.onrender.com/."
   },
@@ -2181,8 +2264,8 @@
     ],
     "alternatives": [
       "about replanning",
-      "what triggers dynamic replanning in the uav project",
-      "replanning obstacles"
+      "replanning obstacles",
+      "what triggers dynamic replanning in the uav project"
     ],
     "answer": "When the simulated sensors detect an obstacle intersecting the active trajectory, the Weighted A* planner is re-triggered to compute an alternate route."
   },
@@ -2196,9 +2279,9 @@
       "math"
     ],
     "alternatives": [
-      "about numpy",
       "what mathematical libraries did you use in the uav project",
-      "numpy scipy math"
+      "numpy scipy math",
+      "about numpy"
     ],
     "answer": "I used NumPy for fast vector matrices calculations, coordinate rotations, and Euclidean distance evaluations."
   },
@@ -2212,9 +2295,9 @@
       "purpose"
     ],
     "alternatives": [
-      "about problem",
       "problem solved purpose",
-      "what was the main problem you solved with the uav simulation"
+      "what was the main problem you solved with the uav simulation",
+      "about problem"
     ],
     "answer": "Direct testing on flight hardware is risky and slow. This simulation provides a safe, reproducible environment to stress-test guidance software before loading it onto edge flight computers."
   },
@@ -2227,9 +2310,9 @@
       "speedup"
     ],
     "alternatives": [
+      "how did you optimize the trajectory generation time",
       "optimization speedup",
-      "about optimization",
-      "how did you optimize the trajectory generation time"
+      "about optimization"
     ],
     "answer": "I optimized mathematical loops in Python using NumPy operations and adjusted the heuristic weights of the A* algorithm to prune search paths early."
   },
@@ -2242,11 +2325,11 @@
       "ground control"
     ],
     "alternatives": [
-      "about gcs",
-      "gcs ground control",
-      "explain a gcs in the context of your uav project",
+      "tell me about a gcs in the context of your uav project",
       "what is a gcs in the context of your uav project",
-      "tell me about a gcs in the context of your uav project"
+      "explain a gcs in the context of your uav project",
+      "gcs ground control",
+      "about gcs"
     ],
     "answer": "GCS stands for Ground Control Station, which serves as the monitoring hub displaying telemetry, altitude, speed, and 3D flight paths."
   },
@@ -2291,9 +2374,9 @@
       "noise"
     ],
     "alternatives": [
-      "wind perturbations noise",
       "how does the uav simulation project handle wind or perturbations",
-      "about wind"
+      "about wind",
+      "wind perturbations noise"
     ],
     "answer": "We inject synthetic noise vectors into the socket telemetry stream to evaluate how the guidance loops correct for flight path drift."
   },
@@ -2306,9 +2389,9 @@
       "github"
     ],
     "alternatives": [
-      "folders github",
+      "about folders",
       "what are the key folders in the uav project github",
-      "about folders"
+      "folders github"
     ],
     "answer": "The GitHub repository contains the core trajectory engine, visualization web templates, Docker configuration, and profiling scripts."
   },
@@ -2321,8 +2404,8 @@
       "drones"
     ],
     "alternatives": [
-      "multirotor drones",
       "is the uav project suitable for multi-rotor drones",
+      "multirotor drones",
       "about multirotor"
     ],
     "answer": "Yes, the path planning algorithms are configured for 3D navigation, making them applicable to both quadcopters and fixed-wing UAVs."
@@ -2336,9 +2419,9 @@
       "psutil"
     ],
     "alternatives": [
-      "how is psutil installed in the uav project",
       "about install",
-      "install psutil"
+      "install psutil",
+      "how is psutil installed in the uav project"
     ],
     "answer": "It is installed via standard Python package management (pip install psutil) and is bundled inside the project's Dockerfile."
   },
@@ -2369,8 +2452,8 @@
       "cpu load profile",
       "what is the average cpu load of the uav planner",
       "explain the average cpu load of the uav planner",
-      "tell me about the average cpu load of the uav planner",
-      "about cpu load"
+      "about cpu load",
+      "tell me about the average cpu load of the uav planner"
     ],
     "answer": "Under normal planning conditions, the CPU footprint remains under 12% on a standard emulated core, spikes occur during dynamic obstacle replanning."
   },
@@ -2383,11 +2466,11 @@
       "run"
     ],
     "alternatives": [
-      "compile run",
-      "how to compile the uav guidance code",
       "how do you compile the uav guidance code",
+      "compile run",
       "about compile",
-      "method for compile the uav guidance code"
+      "method for compile the uav guidance code",
+      "how to compile the uav guidance code"
     ],
     "answer": "You can run the python scripts directly or launch the containers using 'docker-compose up'."
   },
@@ -2401,8 +2484,8 @@
     ],
     "alternatives": [
       "did you write a report on the uav simulation project",
-      "about report",
-      "report paper"
+      "report paper",
+      "about report"
     ],
     "answer": "Yes, I wrote detailed technical documentation covering the algorithm comparisons (A* vs RRT*) and SWaP boundary test logs."
   },
@@ -2415,11 +2498,11 @@
       "comparison"
     ],
     "alternatives": [
-      "what is the difference between a* and rrt* in your findings",
       "tell me about the difference between a* and rrt* in your findings",
       "about difference",
-      "difference comparison",
-      "explain the difference between a* and rrt* in your findings"
+      "explain the difference between a* and rrt* in your findings",
+      "what is the difference between a* and rrt* in your findings",
+      "difference comparison"
     ],
     "answer": "A* is highly efficient for grid-based pathfinding, while RRT* is superior in high-dimensional continuous spaces, though it takes longer to converge."
   },
@@ -2432,9 +2515,9 @@
       "college"
     ],
     "alternatives": [
+      "who supervised your uav simulation project",
       "about supervisor",
-      "supervisor college",
-      "who supervised your uav simulation project"
+      "supervisor college"
     ],
     "answer": "It was built as an academic portfolio project demonstrating computer science principles applied to avionics engineering."
   },
@@ -2448,10 +2531,10 @@
       "project"
     ],
     "alternatives": [
-      "what is spectrafuse",
       "explain spectrafuse",
-      "spectrafuse image fusion project",
       "tell me about spectrafuse",
+      "what is spectrafuse",
+      "spectrafuse image fusion project",
       "about spectrafuse"
     ],
     "answer": "SpectraFuse is a high-performance multi-spectral image fusion and target tracking platform that merges Visible, NIR, and TIR aerial imagery in-browser."
@@ -2466,9 +2549,9 @@
       "images"
     ],
     "alternatives": [
+      "bands channels images",
       "about bands",
-      "what imagery bands or channels does spectrafuse merge",
-      "bands channels images"
+      "what imagery bands or channels does spectrafuse merge"
     ],
     "answer": "SpectraFuse fuses three channels: Visible (color details), Near-Infrared (NIR, vegetation/haze penetration), and Thermal Infrared (TIR, heat signatures)."
   },
@@ -2482,9 +2565,9 @@
       "problem"
     ],
     "alternatives": [
+      "why purpose problem",
       "about why",
-      "why did you build spectrafuse",
-      "why purpose problem"
+      "why did you build spectrafuse"
     ],
     "answer": "I built it to emulate DRDO CABS aerial surveillance specs. Fusing multi-spectral feeds allows operators to detect hidden targets (heat signatures) under poor visibility (fog/night) in a single unified video feed."
   },
@@ -2498,8 +2581,8 @@
     ],
     "alternatives": [
       "dwt wavelet",
-      "about dwt",
-      "what does dwt stand for in spectrafuse"
+      "what does dwt stand for in spectrafuse",
+      "about dwt"
     ],
     "answer": "DWT stands for Discrete Wavelet Transform. It decomposes images into high and low-frequency components for pixel-level feature fusion."
   },
@@ -2527,9 +2610,9 @@
       "saturation"
     ],
     "alternatives": [
-      "about ihs",
       "what does ihs stand for in spectrafuse",
-      "ihs saturation"
+      "ihs saturation",
+      "about ihs"
     ],
     "answer": "IHS stands for Intensity-Hue-Saturation. It converts RGB colors to intensity, hue, and saturation, allowing fusion of thermal details into the intensity channel while preserving colors."
   },
@@ -2544,8 +2627,8 @@
     ],
     "alternatives": [
       "how does spectrafuse perform object detection",
-      "detection object coco-ssd",
-      "about detection"
+      "about detection",
+      "detection object coco-ssd"
     ],
     "answer": "SpectraFuse runs in-browser object detection using TensorFlow.js with the pre-trained COCO-SSD model."
   },
@@ -2558,10 +2641,10 @@
       "tensorflow"
     ],
     "alternatives": [
-      "coco-ssd tensorflow",
-      "tell me about the coco-ssd model in spectrafuse",
-      "what is the coco-ssd model in spectrafuse",
       "explain the coco-ssd model in spectrafuse",
+      "tell me about the coco-ssd model in spectrafuse",
+      "coco-ssd tensorflow",
+      "what is the coco-ssd model in spectrafuse",
       "about coco-ssd"
     ],
     "answer": "COCO-SSD is a Single Shot MultiBox Detector model trained on the COCO dataset, optimized to detect and locate 80 classes of everyday objects in real-time."
@@ -2576,9 +2659,9 @@
       "secure"
     ],
     "alternatives": [
-      "isolation privacy secure",
+      "about isolation",
       "how does spectrafuse ensure data isolation",
-      "about isolation"
+      "isolation privacy secure"
     ],
     "answer": "By running 100% locally in the user's browser via TensorFlow.js and HTML5 Canvas API. No image data is sent to external servers, which is crucial for classified defense data."
   },
@@ -2592,9 +2675,9 @@
       "psnr"
     ],
     "alternatives": [
+      "about metrics",
       "what image quality metrics are implemented in spectrafuse",
-      "metrics quality psnr",
-      "about metrics"
+      "metrics quality psnr"
     ],
     "answer": "It calculates Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) in real-time to measure the mathematical quality of the fused composite image."
   },
@@ -2607,11 +2690,11 @@
       "noise"
     ],
     "alternatives": [
-      "psnr noise",
       "explain psnr in spectrafuse",
+      "what is psnr in spectrafuse",
       "about psnr",
       "tell me about psnr in spectrafuse",
-      "what is psnr in spectrafuse"
+      "psnr noise"
     ],
     "answer": "PSNR measures the ratio between the maximum possible power of a signal and the power of corrupting noise, evaluating how much detail was lost during image fusion."
   },
@@ -2624,11 +2707,11 @@
       "similarity"
     ],
     "alternatives": [
-      "tell me about ssim in spectrafuse",
-      "explain ssim in spectrafuse",
       "ssim similarity",
       "what is ssim in spectrafuse",
-      "about ssim"
+      "tell me about ssim in spectrafuse",
+      "about ssim",
+      "explain ssim in spectrafuse"
     ],
     "answer": "SSIM is a perceptual metric that quantifies the structural similarity between two images, assessing how closely the fused output resembles the input sources."
   },
@@ -2642,10 +2725,10 @@
       "libraries"
     ],
     "alternatives": [
+      "tell me about the tech stack of spectrafuse",
+      "what is the tech stack of spectrafuse",
       "about stack",
       "explain the tech stack of spectrafuse",
-      "what is the tech stack of spectrafuse",
-      "tell me about the tech stack of spectrafuse",
       "stack technologies libraries"
     ],
     "answer": "The tech stack includes TensorFlow.js, COCO-SSD, HTML5 Canvas API, Zustand, TailwindCSS, and JavaScript transform math (PCA, DWT, IHS)."
@@ -2660,11 +2743,11 @@
       "netlify"
     ],
     "alternatives": [
-      "about deployment",
       "where is spectrafuse deployed",
-      "where can i find spectrafuse deployed",
+      "location of spectrafuse deployed",
       "deployment hosted netlify",
-      "location of spectrafuse deployed"
+      "about deployment",
+      "where can i find spectrafuse deployed"
     ],
     "answer": "SpectraFuse is deployed on Netlify."
   },
@@ -2677,11 +2760,11 @@
       "live link"
     ],
     "alternatives": [
-      "about netlify link",
       "tell me about the netlify link for spectrafuse",
       "netlify link live link",
+      "what is the netlify link for spectrafuse",
       "explain the netlify link for spectrafuse",
-      "what is the netlify link for spectrafuse"
+      "about netlify link"
     ],
     "answer": "You can access the live SpectraFuse platform at https://spectrafuse.netlify.app/."
   },
@@ -2694,9 +2777,9 @@
       "repository"
     ],
     "alternatives": [
+      "is there a github link for spectrafuse",
       "github repository",
-      "about github",
-      "is there a github link for spectrafuse"
+      "about github"
     ],
     "answer": "Yes, the repository is on GitHub at https://github.com/Nitish-vattikuti/Spectrafuse."
   },
@@ -2710,11 +2793,11 @@
       "registration"
     ],
     "alternatives": [
-      "about alignment",
-      "how to handle real-time frame alignment in spectrafuse",
       "alignment frames registration",
-      "method for handle real-time frame alignment in spectrafuse",
-      "how do you handle real-time frame alignment in spectrafuse"
+      "about alignment",
+      "how do you handle real-time frame alignment in spectrafuse",
+      "how to handle real-time frame alignment in spectrafuse",
+      "method for handle real-time frame alignment in spectrafuse"
     ],
     "answer": "I implement canvas coordinate mapping and pixel transformations to align the shapes and scales of Visible, NIR, and TIR frames before executing math fusion."
   },
@@ -2729,8 +2812,8 @@
     ],
     "alternatives": [
       "what are the advantages of local browser processing in spectrafuse",
-      "about browser",
-      "browser advantages client"
+      "browser advantages client",
+      "about browser"
     ],
     "answer": "It provides absolute data security (100% data isolation), zero server hosting costs, and runs client-side GPU acceleration using WebGL through TensorFlow.js."
   },
@@ -2744,11 +2827,11 @@
       "defense"
     ],
     "alternatives": [
+      "drdo cabs defense",
+      "about drdo",
       "explain drdo cabs",
       "tell me about drdo cabs",
-      "what is drdo cabs",
-      "about drdo",
-      "drdo cabs defense"
+      "what is drdo cabs"
     ],
     "answer": "DRDO CABS is the Center for Airborne Systems under India's Defence Research and Development Organisation, which researches airborne surveillance technologies that inspired this project."
   },
@@ -2762,9 +2845,9 @@
       "fusion"
     ],
     "alternatives": [
-      "about color",
       "color thermal fusion",
-      "how is color preserved during thermal fusion in spectrafuse"
+      "how is color preserved during thermal fusion in spectrafuse",
+      "about color"
     ],
     "answer": "By using the IHS transform, I extract the color channels (Hue and Saturation) from the visible feed and replace the Intensity channel with the fused thermal features before converting back to RGB."
   },
@@ -2778,11 +2861,11 @@
       "speed"
     ],
     "alternatives": [
-      "what is the average processing frame rate of spectrafuse",
+      "tell me about the average processing frame rate of spectrafuse",
+      "explain the average processing frame rate of spectrafuse",
       "fps frame rate speed",
       "about fps",
-      "tell me about the average processing frame rate of spectrafuse",
-      "explain the average processing frame rate of spectrafuse"
+      "what is the average processing frame rate of spectrafuse"
     ],
     "answer": "On standard modern browsers with GPU support, it maintains smooth frame rates (15-30 FPS) for image transforms and object detection."
   },
@@ -2796,9 +2879,9 @@
       "responsive"
     ],
     "alternatives": [
-      "about mobile",
       "can spectrafuse run on mobile devices",
-      "mobile phone responsive"
+      "mobile phone responsive",
+      "about mobile"
     ],
     "answer": "Yes, it is responsive and can run on mobile web browsers, leveraging mobile WebGL accelerators for TensorFlow.js."
   },
@@ -2827,9 +2910,9 @@
       "state"
     ],
     "alternatives": [
-      "about zustand",
       "how is state managed in spectrafuse",
-      "zustand state"
+      "zustand state",
+      "about zustand"
     ],
     "answer": "I use Zustand for lightweight, high-performance state management to track video feed statuses, active transforms, and bounding boxes."
   },
@@ -2842,11 +2925,11 @@
       "tensorflow"
     ],
     "alternatives": [
+      "how to import tensorflow.js in spectrafuse",
       "about import",
-      "method for import tensorflow.js in spectrafuse",
       "how do you import tensorflow.js in spectrafuse",
       "import tensorflow",
-      "how to import tensorflow.js in spectrafuse"
+      "method for import tensorflow.js in spectrafuse"
     ],
     "answer": "It is loaded via npm dependencies and compiled by Vite into the client bundle."
   },
@@ -2859,8 +2942,8 @@
       "files"
     ],
     "alternatives": [
-      "about video",
       "video files",
+      "about video",
       "can spectrafuse fuse video files"
     ],
     "answer": "Yes, it supports fusing real-time webcams, simulated camera inputs, or pre-uploaded multi-spectral video files."
@@ -2874,11 +2957,11 @@
       "wavelet transform"
     ],
     "alternatives": [
+      "about dwt math",
+      "explain the mathematical complexity of dwt in spectrafuse",
       "what is the mathematical complexity of dwt in spectrafuse",
       "tell me about the mathematical complexity of dwt in spectrafuse",
-      "about dwt math",
-      "dwt math wavelet transform",
-      "explain the mathematical complexity of dwt in spectrafuse"
+      "dwt math wavelet transform"
     ],
     "answer": "The discrete wavelet transform decomposes the pixel grid using Haar wavelets, requiring O(N) operations per frame, optimized via typed arrays in JavaScript."
   },
@@ -2891,9 +2974,9 @@
       "webgl"
     ],
     "alternatives": [
-      "shaders webgl",
+      "did you write custom shaders for spectrafuse",
       "about shaders",
-      "did you write custom shaders for spectrafuse"
+      "shaders webgl"
     ],
     "answer": "The transform math runs on CPU using optimized JS loops, while TensorFlow.js model detection runs on WebGL shaders automatically."
   },
@@ -2906,11 +2989,11 @@
       "calculation"
     ],
     "alternatives": [
-      "about ssim math",
-      "how do you calculate ssim in javascript",
+      "how to calculate ssim in javascript",
       "method for calculate ssim in javascript",
       "ssim math calculation",
-      "how to calculate ssim in javascript"
+      "about ssim math",
+      "how do you calculate ssim in javascript"
     ],
     "answer": "I compute local means, variances, and covariances of the pixel intensities in the canvas context buffer to evaluate structural similarity."
   },
@@ -2923,11 +3006,11 @@
       "html5"
     ],
     "alternatives": [
-      "what is the role of html5 canvas in spectrafuse",
-      "tell me about the role of html5 canvas in spectrafuse",
-      "about canvas",
       "explain the role of html5 canvas in spectrafuse",
-      "canvas html5"
+      "canvas html5",
+      "what is the role of html5 canvas in spectrafuse",
+      "about canvas",
+      "tell me about the role of html5 canvas in spectrafuse"
     ],
     "answer": "HTML5 Canvas acts as the high-speed render buffer, allowing frame manipulation, pixel-level array processing, and dynamic drawing of detection bounding boxes."
   },
@@ -2941,8 +3024,8 @@
       "design"
     ],
     "alternatives": [
-      "about ui",
       "how is the user interface designed in spectrafuse",
+      "about ui",
       "ui interface design"
     ],
     "answer": "It is built with a dark cinematic theme, featuring video preview screens, real-time metrics graphs (PSNR/SSIM), and configuration panels for transform weights."
@@ -2956,8 +3039,8 @@
       "upload"
     ],
     "alternatives": [
-      "about dataset",
       "dataset upload",
+      "about dataset",
       "can i use my own image datasets in spectrafuse"
     ],
     "answer": "Yes, you can upload your own multi-spectral image sets through the interface to test the PCA and DWT transforms."
@@ -2971,9 +3054,9 @@
       "backend"
     ],
     "alternatives": [
+      "does spectrafuse require a backend database",
       "database backend",
-      "about database",
-      "does spectrafuse require a backend database"
+      "about database"
     ],
     "answer": "No, SpectraFuse is a serverless, static SPA that runs entirely on the client, eliminating database security risks."
   },
@@ -2987,11 +3070,11 @@
       "kb"
     ],
     "alternatives": [
-      "about size",
-      "explain the size of the spectrafuse bundle",
-      "size bundle kb",
       "what is the size of the spectrafuse bundle",
-      "tell me about the size of the spectrafuse bundle"
+      "tell me about the size of the spectrafuse bundle",
+      "about size",
+      "size bundle kb",
+      "explain the size of the spectrafuse bundle"
     ],
     "answer": "The compiled production bundle is optimized under 140 KB (excluding the external model weights loaded dynamically)."
   },
@@ -3004,9 +3087,9 @@
       "verification"
     ],
     "alternatives": [
-      "how did you test spectrafuse",
+      "test verification",
       "about test",
-      "test verification"
+      "how did you test spectrafuse"
     ],
     "answer": "I verified the transforms using standardized aerial imaging datasets (Visible/NIR/TIR) and checked that PSNR/SSIM scores aligned with expected mathematical fusion values."
   },
@@ -3021,8 +3104,8 @@
       "portfolio"
     ],
     "alternatives": [
-      "projects software build",
       "tell me about your software projects.",
+      "projects software build",
       "about projects"
     ],
     "answer": "I have built 6 core engineering projects, led by my dual flagships: the Autonomous UAV SIL Simulation (3D path planning with Weighted A* and RRT*) and SpectraFuse (multi-spectral image fusion and object detection in-browser). My other projects include AI Virtual Mouse, InfraSight, Smart Healthcare, and Number Plate Detection."
@@ -3037,11 +3120,11 @@
       "mouse"
     ],
     "alternatives": [
-      "what is the ai virtual mouse project",
-      "explain the ai virtual mouse project",
-      "about virtual mouse",
       "virtual mouse gesture mouse",
-      "tell me about the ai virtual mouse project"
+      "about virtual mouse",
+      "what is the ai virtual mouse project",
+      "tell me about the ai virtual mouse project",
+      "explain the ai virtual mouse project"
     ],
     "answer": "The AI Virtual Mouse is a computer vision application that enables contactless hand gesture controls using standard webcams."
   },
@@ -3070,9 +3153,9 @@
       "hand tracking"
     ],
     "alternatives": [
+      "how does the virtual mouse track hands",
       "about mediapipe",
-      "mediapipe hand tracking",
-      "how does the virtual mouse track hands"
+      "mediapipe hand tracking"
     ],
     "answer": "It uses MediaPipe's hand landmark detection model to extract 21 3D hand coordinates in real-time."
   },
@@ -3085,11 +3168,11 @@
       "gestures"
     ],
     "alternatives": [
-      "how to trigger a click in the virtual mouse",
-      "about click",
       "how do you trigger a click in the virtual mouse",
+      "about click",
       "method for trigger a click in the virtual mouse",
-      "click gestures"
+      "click gestures",
+      "how to trigger a click in the virtual mouse"
     ],
     "answer": "Clicks are triggered by measuring the distance between specific finger landmarks (e.g. index and middle finger tips pinching or closing together)."
   },
@@ -3102,11 +3185,11 @@
       "cursor"
     ],
     "alternatives": [
-      "explain pyautogui used for in the virtual mouse",
-      "pyautogui cursor",
       "what is pyautogui used for in the virtual mouse",
       "about pyautogui",
-      "tell me about pyautogui used for in the virtual mouse"
+      "tell me about pyautogui used for in the virtual mouse",
+      "pyautogui cursor",
+      "explain pyautogui used for in the virtual mouse"
     ],
     "answer": "PyAutoGUI is a Python library used to programmatically move the desktop cursor and trigger left/right click events based on gesture coordinates."
   },
@@ -3120,11 +3203,11 @@
       "anomaly"
     ],
     "alternatives": [
+      "tell me about the infrasight project",
       "about infrasight",
-      "what is the infrasight project",
-      "infrasight monitoring anomaly",
       "explain the infrasight project",
-      "tell me about the infrasight project"
+      "infrasight monitoring anomaly",
+      "what is the infrasight project"
     ],
     "answer": "InfraSight is an AI-powered IT infrastructure monitoring and anomaly prediction platform designed to forecast server telemetry failures."
   },
@@ -3138,8 +3221,8 @@
       "scikit-learn"
     ],
     "alternatives": [
-      "what technologies did you use for infrasight",
       "about infrasight tech",
+      "what technologies did you use for infrasight",
       "infrasight tech fastapi scikit-learn"
     ],
     "answer": "It is built with Python, Scikit-Learn (ML models), FastAPI, InfluxDB (time-series data), Pandas, and NumPy."
@@ -3154,9 +3237,9 @@
       "models"
     ],
     "alternatives": [
-      "predict failures models",
+      "about predict",
       "how does infrasight predict failures",
-      "about predict"
+      "predict failures models"
     ],
     "answer": "It processes real-time server telemetry metrics (CPU, memory, disk I/O) using machine learning anomaly detection models (like Autoencoders or Isolation Forests) to flag patterns preceding failures."
   },
@@ -3170,8 +3253,8 @@
     ],
     "alternatives": [
       "influxdb database",
-      "why did you use influxdb in infrasight",
-      "about influxdb"
+      "about influxdb",
+      "why did you use influxdb in infrasight"
     ],
     "answer": "InfluxDB is a time-series database optimized for high-write workloads of server telemetry metrics gathered over chronological intervals."
   },
@@ -3186,10 +3269,10 @@
     ],
     "alternatives": [
       "healthcare portal medical doctor",
-      "about healthcare portal",
+      "what is the smart healthcare portal project",
       "tell me about the smart healthcare portal project",
       "explain the smart healthcare portal project",
-      "what is the smart healthcare portal project"
+      "about healthcare portal"
     ],
     "answer": "The Smart Healthcare Portal is a browser-based medical assistant guiding patients from symptom logging to home remedies and doctor locating."
   },
@@ -3203,9 +3286,9 @@
       "bootstrap"
     ],
     "alternatives": [
-      "about healthcare tech",
       "what technologies did you use for the healthcare portal",
-      "healthcare tech leaflet bootstrap"
+      "healthcare tech leaflet bootstrap",
+      "about healthcare tech"
     ],
     "answer": "It is built using HTML5, CSS3, JavaScript (ES6), Bootstrap, and Leaflet.js maps."
   },
@@ -3219,11 +3302,11 @@
       "location"
     ],
     "alternatives": [
-      "leaflet map location",
       "about leaflet",
-      "tell me about leaflet.js used for in the healthcare portal",
       "explain leaflet.js used for in the healthcare portal",
-      "what is leaflet.js used for in the healthcare portal"
+      "leaflet map location",
+      "what is leaflet.js used for in the healthcare portal",
+      "tell me about leaflet.js used for in the healthcare portal"
     ],
     "answer": "Leaflet.js is a lightweight open-source JavaScript library used to render interactive maps displaying doctor clinic geolocations relative to the patient."
   },
@@ -3237,11 +3320,11 @@
       "cctv"
     ],
     "alternatives": [
-      "what is the number plate detection project",
       "about number plate",
       "explain the number plate detection project",
-      "tell me about the number plate detection project",
-      "number plate license cctv"
+      "what is the number plate detection project",
+      "number plate license cctv",
+      "tell me about the number plate detection project"
     ],
     "answer": "It is a deep learning computer vision pipeline that automatically detects vehicle license plates in video streams and extracts the alphanumeric text."
   },
@@ -3255,9 +3338,9 @@
       "keras"
     ],
     "alternatives": [
-      "about plate tech",
       "plate tech tensorflow keras",
-      "what technologies did you use for number plate detection"
+      "what technologies did you use for number plate detection",
+      "about plate tech"
     ],
     "answer": "It is built with Python, TensorFlow, Keras (CNN models), OpenCV (image parsing), SQLite, and NumPy."
   },
@@ -3271,9 +3354,9 @@
       "cnn"
     ],
     "alternatives": [
-      "ocr text extraction cnn",
+      "about ocr",
       "how does the number plate detection extract text",
-      "about ocr"
+      "ocr text extraction cnn"
     ],
     "answer": "It uses a Convolutional Neural Network (CNN) classifier to segment character blocks and perform Optical Character Recognition (OCR) on the license plate area."
   },
@@ -3286,9 +3369,9 @@
       "logs"
     ],
     "alternatives": [
-      "where are vehicle logs stored in the number plate detection project",
       "about sqlite",
-      "sqlite logs"
+      "sqlite logs",
+      "where are vehicle logs stored in the number plate detection project"
     ],
     "answer": "Vehicle license numbers, timestamps, and confidence scores are stored in a local SQLite database."
   },
@@ -3317,9 +3400,9 @@
       "cv projects"
     ],
     "alternatives": [
+      "which of your projects use computer vision",
       "about computer vision",
-      "computer vision cv projects",
-      "which of your projects use computer vision"
+      "computer vision cv projects"
     ],
     "answer": "Four of my projects utilize Computer Vision: SpectraFuse (aerial feeds), AI Virtual Mouse (hand gestures), Number Plate Detection (CCTV feeds), and the UAV SIL simulation (visual trajectories)."
   },
@@ -3332,8 +3415,8 @@
       "machine learning"
     ],
     "alternatives": [
-      "about ml projects",
       "which of your projects use machine learning",
+      "about ml projects",
       "ml projects machine learning"
     ],
     "answer": "My ML/DL projects include SpectraFuse (COCO-SSD), InfraSight (anomaly prediction), and Number Plate Detection (CNN classifier)."
@@ -3347,10 +3430,10 @@
       "repositories"
     ],
     "alternatives": [
+      "is nitish r projects open source",
       "open source repositories",
       "about open source",
-      "are your projects open source",
-      "is nitish r projects open source"
+      "are your projects open source"
     ],
     "answer": "Yes, my project codebases are hosted as open-source repositories on my GitHub profile (github.com/Nitish-vattikuti)."
   },
@@ -3363,9 +3446,9 @@
       "setup"
     ],
     "alternatives": [
-      "about run mouse",
+      "run mouse setup",
       "how do i run the ai virtual mouse locally",
-      "run mouse setup"
+      "about run mouse"
     ],
     "answer": "Clone my repository, install OpenCV and MediaPipe via pip, and run the main python script to access your webcam."
   },
@@ -3379,8 +3462,8 @@
     ],
     "alternatives": [
       "about healthcare deploy",
-      "is the smart healthcare portal deployed",
-      "healthcare deploy netlify"
+      "healthcare deploy netlify",
+      "is the smart healthcare portal deployed"
     ],
     "answer": "Yes, the Smart Healthcare Portal is hosted on Netlify at https://smarthealthcare-1896.netlify.app/."
   },
@@ -3393,11 +3476,11 @@
       "database"
     ],
     "alternatives": [
-      "sqlite database",
-      "about sqlite",
       "explain the database of the number plate detection project",
+      "sqlite database",
       "what is the database of the number plate detection project",
-      "tell me about the database of the number plate detection project"
+      "tell me about the database of the number plate detection project",
+      "about sqlite"
     ],
     "answer": "It uses a local SQLite database which stores logs of license numbers, detection times, and camera IDs."
   },
@@ -3410,9 +3493,9 @@
       "api"
     ],
     "alternatives": [
-      "how does infrasight communicate telemetry",
       "fastapi api",
-      "about fastapi"
+      "about fastapi",
+      "how does infrasight communicate telemetry"
     ],
     "answer": "FastAPI endpoints ingest telemetry streams from monitoring agents and feed them into the pandas/numpy analytical pipeline."
   },
@@ -3425,8 +3508,8 @@
       "flagship"
     ],
     "alternatives": [
-      "which is your most complex project",
       "about complex",
+      "which is your most complex project",
       "complex flagship"
     ],
     "answer": "The Autonomous UAV SIL Simulation and SpectraFuse are my dual flagship projects due to their advanced algorithms, math transforms, and real-time processing constraints."
@@ -3442,8 +3525,8 @@
     ],
     "alternatives": [
       "what programming languages do you know",
-      "about languages",
-      "languages programming code"
+      "languages programming code",
+      "about languages"
     ],
     "answer": "My programming languages include Python, SQL, Java, and C/C++ (OOP)."
   },
@@ -3456,10 +3539,10 @@
       "scripts"
     ],
     "alternatives": [
-      "about python",
-      "is nitish proficient in python",
       "are you proficient in python",
-      "python scripts"
+      "python scripts",
+      "is nitish proficient in python",
+      "about python"
     ],
     "answer": "Yes, Python is my primary programming language. I use it for computer vision (OpenCV), machine learning (TensorFlow/Keras), path planning (A*/RRT*), and scripting."
   },
@@ -3472,11 +3555,11 @@
       "oop"
     ],
     "alternatives": [
-      "explain your experience with java",
-      "about java",
-      "what is your experience with java",
+      "java oop",
       "tell me about your experience with java",
-      "java oop"
+      "what is your experience with java",
+      "about java",
+      "explain your experience with java"
     ],
     "answer": "I studied Java through my university coursework and use it to implement OOP design patterns and backend database integrations."
   },
@@ -3490,9 +3573,9 @@
       "oop"
     ],
     "alternatives": [
+      "about c++",
       "explain your experience with c/c++",
       "c++ c oop",
-      "about c++",
       "tell me about your experience with c/c++",
       "what is your experience with c/c++"
     ],
@@ -3508,11 +3591,11 @@
       "databases"
     ],
     "alternatives": [
-      "about sql",
+      "sql mysql databases",
       "tell me about your experience with sql and databases",
-      "explain your experience with sql and databases",
       "what is your experience with sql and databases",
-      "sql mysql databases"
+      "about sql",
+      "explain your experience with sql and databases"
     ],
     "answer": "I write relational queries, design schemas, and utilize databases like MySQL, SQLite, and InfluxDB (time-series)."
   },
@@ -3526,8 +3609,8 @@
       "html"
     ],
     "alternatives": [
-      "about web",
       "what web technologies do you use",
+      "about web",
       "web frontend html"
     ],
     "answer": "I use HTML5, CSS3, JavaScript (ES6), React, TailwindCSS, and Zustand."
@@ -3541,8 +3624,8 @@
       "containers"
     ],
     "alternatives": [
-      "about docker",
       "docker containers",
+      "about docker",
       "does nitish know how to use docker",
       "do you know how to use docker"
     ],
@@ -3558,10 +3641,10 @@
       "terminal"
     ],
     "alternatives": [
-      "does nitish know linux",
+      "linux unix terminal",
       "about linux",
       "do you know linux",
-      "linux unix terminal"
+      "does nitish know linux"
     ],
     "answer": "Yes, I am comfortable working in Linux environments, utilizing the terminal, writing bash scripts, and managing files."
   },
@@ -3575,9 +3658,9 @@
       "version control"
     ],
     "alternatives": [
-      "what version control systems do you use",
+      "git github version control",
       "about git",
-      "git github version control"
+      "what version control systems do you use"
     ],
     "answer": "I use Git and GitHub for tracking changes, code reviews, and managing repository releases."
   },
@@ -3590,11 +3673,11 @@
       "computer vision"
     ],
     "alternatives": [
-      "opencv computer vision",
-      "explain your experience with opencv",
+      "about opencv",
       "tell me about your experience with opencv",
-      "what is your experience with opencv",
-      "about opencv"
+      "explain your experience with opencv",
+      "opencv computer vision",
+      "what is your experience with opencv"
     ],
     "answer": "I use OpenCV for image processing, color masking, filtering, webcam capture, and key-point operations in my computer vision projects (Virtual Mouse, Number Plate Detection)."
   },
@@ -3607,10 +3690,10 @@
       "arrays"
     ],
     "alternatives": [
-      "tell me about your experience with numpy",
       "about numpy",
-      "numpy arrays",
       "what is your experience with numpy",
+      "tell me about your experience with numpy",
+      "numpy arrays",
       "explain your experience with numpy"
     ],
     "answer": "I use NumPy extensively for multi-dimensional array calculations, vector mathematics, and computational optimizations in Python."
@@ -3625,11 +3708,11 @@
       "deep learning"
     ],
     "alternatives": [
-      "tensorflow keras deep learning",
       "what is your experience with tensorflow",
       "tell me about your experience with tensorflow",
-      "explain your experience with tensorflow",
-      "about tensorflow"
+      "tensorflow keras deep learning",
+      "about tensorflow",
+      "explain your experience with tensorflow"
     ],
     "answer": "I use TensorFlow and Keras for deep learning models (CNN license plate character extraction) and TensorFlow.js for in-browser client-side object detection (SpectraFuse)."
   },
@@ -3642,11 +3725,11 @@
       "state management"
     ],
     "alternatives": [
-      "what is zustand",
-      "about zustand",
       "zustand state management",
-      "explain zustand",
-      "tell me about zustand"
+      "tell me about zustand",
+      "about zustand",
+      "what is zustand",
+      "explain zustand"
     ],
     "answer": "Zustand is a lightweight, fast, and hook-based state management library for React, which I use to manage UI states without standard redux overhead."
   },
@@ -3660,10 +3743,10 @@
       "design"
     ],
     "alternatives": [
-      "does nitish know how to use figma",
       "do you know how to use figma",
       "about figma",
-      "figma ui/ux design"
+      "figma ui/ux design",
+      "does nitish know how to use figma"
     ],
     "answer": "Yes, I use Figma to design user interface mockups, wireframes, and responsive layouts before writing code."
   },
@@ -3677,11 +3760,11 @@
       "analytics"
     ],
     "alternatives": [
-      "powerbi bi analytics",
-      "explain powerbi used for",
+      "about powerbi",
       "what is powerbi used for",
-      "tell me about powerbi used for",
-      "about powerbi"
+      "explain powerbi used for",
+      "powerbi bi analytics",
+      "tell me about powerbi used for"
     ],
     "answer": "I use PowerBI for data visualization, creating business intelligence dashboards, and analyzing performance metrics."
   },
@@ -3695,10 +3778,10 @@
       "word"
     ],
     "alternatives": [
-      "do you know microsoft office 365",
-      "does nitish know microsoft office 365",
       "office excel word",
-      "about office"
+      "do you know microsoft office 365",
+      "about office",
+      "does nitish know microsoft office 365"
     ],
     "answer": "Yes, I am proficient in MS Office 365, including Excel (formulas, charts), Word (documentation), and PowerPoint."
   },
@@ -3711,11 +3794,11 @@
       "timeseries"
     ],
     "alternatives": [
-      "what is your database of choice for time-series data",
-      "tell me about your database of choice for time-series data",
-      "influxdb timeseries",
       "explain your database of choice for time-series data",
-      "about influxdb"
+      "tell me about your database of choice for time-series data",
+      "about influxdb",
+      "what is your database of choice for time-series data",
+      "influxdb timeseries"
     ],
     "answer": "I use InfluxDB due to its optimization for logging high-frequency telemetry metrics in real-time."
   },
@@ -3730,8 +3813,8 @@
     ],
     "alternatives": [
       "about tailwind",
-      "what css framework do you prefer",
-      "tailwind css bootstrap"
+      "tailwind css bootstrap",
+      "what css framework do you prefer"
     ],
     "answer": "I am comfortable with both TailwindCSS (utility-first, clean design systems) and Bootstrap (rapid modular structuring)."
   },
@@ -3746,10 +3829,10 @@
     ],
     "alternatives": [
       "what is your experience with responsive web design",
+      "about responsive",
       "explain your experience with responsive web design",
       "tell me about your experience with responsive web design",
-      "responsive media queries viewport",
-      "about responsive"
+      "responsive media queries viewport"
     ],
     "answer": "I specialize in building multi-viewport responsive grids that adjust cleanly across desktop, tablet, and mobile displays, which I apply at my Vantiris internship."
   },
@@ -3763,10 +3846,10 @@
       "dependencies"
     ],
     "alternatives": [
-      "method for manage dependencies in python",
+      "about pip",
       "pip requirements.txt dependencies",
       "how do you manage dependencies in python",
-      "about pip",
+      "method for manage dependencies in python",
       "how to manage dependencies in python"
     ],
     "answer": "I use pip and maintain structured requirements.txt files or virtual environments to isolate packages."
@@ -3782,8 +3865,8 @@
     ],
     "alternatives": [
       "built portfolio technologies",
-      "how was this portfolio website built",
-      "about built"
+      "about built",
+      "how was this portfolio website built"
     ],
     "answer": "This portfolio is built using React + Vite + TypeScript, styled with TailwindCSS and custom CSS, and uses React Three Fiber (Three.js) for the interactive 3D rotating drone."
   },
@@ -3799,11 +3882,11 @@
       "propeller"
     ],
     "alternatives": [
-      "tell me about the purpose of the 3d rotating drone",
-      "explain the purpose of the 3d rotating drone",
       "drone wireframe 3d",
+      "explain the purpose of the 3d rotating drone",
       "about drone",
-      "what is the purpose of the 3d rotating drone"
+      "what is the purpose of the 3d rotating drone",
+      "tell me about the purpose of the 3d rotating drone"
     ],
     "answer": "The rotating 3D drone represents my core interest and technical work in Autonomous UAV SIL Simulation. It displays my active skills structurally mapped on a wireframe quadcopter (landing skids, motors, camera gimbal, and fuselage) with spinning propellers and dynamic particle thrust."
   },
@@ -3817,9 +3900,9 @@
       "playfair"
     ],
     "alternatives": [
-      "font typography playfair",
       "about font",
-      "what font styles are used in this portfolio"
+      "what font styles are used in this portfolio",
+      "font typography playfair"
     ],
     "answer": "The portfolio uses Playfair Display (a display serif font) for major section headings and rotating hero names, and Inter (sans-serif) for body copies and descriptive content."
   },
@@ -3833,11 +3916,11 @@
       "vercel"
     ],
     "alternatives": [
-      "where can i find this portfolio hosted",
       "hosting github pages vercel",
+      "where is this portfolio hosted",
+      "where can i find this portfolio hosted",
       "location of this portfolio hosted",
-      "about hosting",
-      "where is this portfolio hosted"
+      "about hosting"
     ],
     "answer": "The portfolio is structured for Vercel Serverless deployments and GitHub Pages static hosting."
   },
@@ -3851,8 +3934,8 @@
       "ai"
     ],
     "alternatives": [
-      "about chatbot",
       "chatbot chat ai",
+      "about chatbot",
       "how is the chatbot implemented in the portfolio"
     ],
     "answer": "The chatbot uses a hybrid design: an online RAG pipeline (Vercel Serverless / Supabase Edge Functions with Groq Llama models) and a fully offline client-side fuzzy matcher running locally in the browser."
@@ -3866,9 +3949,9 @@
       "react"
     ],
     "alternatives": [
+      "vite react",
       "why did you choose react + vite for the portfolio",
-      "about vite",
-      "vite react"
+      "about vite"
     ],
     "answer": "React allows modular component structuring (like separate sections for experience, projects, and chat), and Vite provides fast Hot Module Replacement (HMR) and optimized build bundling."
   },
@@ -3882,9 +3965,9 @@
       "viewport"
     ],
     "alternatives": [
-      "about mobile",
+      "is the portfolio optimized for mobile viewports",
       "mobile responsive viewport",
-      "is the portfolio optimized for mobile viewports"
+      "about mobile"
     ],
     "answer": "Yes, all grid structures, timelines, navigation bars, and the 3D canvas are optimized for fluid scaling on smaller mobile screens."
   },
@@ -3898,9 +3981,9 @@
       "aesthetics"
     ],
     "alternatives": [
-      "unique design aesthetics",
+      "what makes this portfolio design unique",
       "about unique",
-      "what makes this portfolio design unique"
+      "unique design aesthetics"
     ],
     "answer": "It features a premium dark theme, glassmorphic card boundaries, interactive 3D elements, custom typography alignment, and a rate-limited secure AI chat assistant."
   },
@@ -3913,9 +3996,9 @@
       "fallback"
     ],
     "alternatives": [
-      "how does the chatbot work offline",
+      "offline fallback",
       "about offline",
-      "offline fallback"
+      "how does the chatbot work offline"
     ],
     "answer": "If the server is unreachable or API keys are missing, the client-side fallback uses a Jaccard token-matching search to query my 200+ Q&A dataset locally and return the exact answer."
   },
@@ -3928,9 +4011,9 @@
       "lucide"
     ],
     "alternatives": [
-      "who designed the icons on this portfolio",
       "about icons",
-      "icons lucide"
+      "icons lucide",
+      "who designed the icons on this portfolio"
     ],
     "answer": "Most icons are rendered using Lucide-React, supplemented by a custom ServiceNow logo asset."
   },
@@ -3944,8 +4027,8 @@
     ],
     "alternatives": [
       "can i clone your portfolio repository",
-      "clone code",
-      "about clone"
+      "about clone",
+      "clone code"
     ],
     "answer": "Yes, you can clone my portfolio repository under the MIT license from github.com/Nitish-vattikuti/PORTFOLIO."
   },
@@ -3958,8 +4041,8 @@
       "theme"
     ],
     "alternatives": [
-      "dark theme",
       "about dark",
+      "dark theme",
       "does the portfolio support dark mode"
     ],
     "answer": "Yes, it is styled with a default dark cinematic theme, featuring charcoal backgrounds, primary green highlights, and soft mesh glow effects."
@@ -3974,8 +4057,8 @@
       "optimized"
     ],
     "alternatives": [
-      "about speed",
       "speed loading optimized",
+      "about speed",
       "how long does it take to load this portfolio"
     ],
     "answer": "The site is optimized with compressed images and code-split chunks, loading in under 1 second on standard networks."
@@ -3989,9 +4072,9 @@
       "projects.ts"
     ],
     "alternatives": [
-      "update projects.ts",
+      "how do i update the projects list on this portfolio",
       "about update",
-      "how do i update the projects list on this portfolio"
+      "update projects.ts"
     ],
     "answer": "You can update the projects list by editing 'src/data/projects.ts' to add or modify project cards in the array."
   },
@@ -4004,11 +4087,11 @@
       "robots.txt"
     ],
     "alternatives": [
+      "sitemap robots.txt",
       "explain the sitemap of your portfolio",
       "tell me about the sitemap of your portfolio",
-      "sitemap robots.txt",
-      "what is the sitemap of your portfolio",
-      "about sitemap"
+      "about sitemap",
+      "what is the sitemap of your portfolio"
     ],
     "answer": "The site includes a public sitemap.xml and robots.txt file in the '/public' folder to guide search engines for proper SEO indexes."
   }
