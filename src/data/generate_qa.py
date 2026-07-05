@@ -174,8 +174,8 @@ servicenow_questions = [
     ("What does ServiceNow CSA stand for?", ["csa", "system administrator"], "ServiceNow CSA stands for Certified System Administrator. It proves proficiency in configuring and managing a ServiceNow instance."),
     ("What does ServiceNow CAD stand for?", ["cad", "developer", "application"], "ServiceNow CAD stands for Certified Application Developer. It validates skills in designing, building, and deploying custom ServiceNow applications."),
     ("When did you get your ServiceNow certifications?", ["year", "date", "certified"], "I obtained both my CSA and CAD certifications in 2026."),
-    ("Is there a verification link for your ServiceNow CSA certification?", ["csa link", "csa certificate"], "Yes, you can view my ServiceNow CSA credential on my resume or verify it via the ServiceNow Webassessor profile link."),
-    ("Is there a verification link for your ServiceNow CAD certification?", ["cad link", "cad certificate"], "Yes, my CAD certification is linked on my resume, demonstrating developer credential verification."),
+    ("Is there a verification link for your ServiceNow CSA certification?", ["csa link", "csa certificate"], "Yes, you can verify it directly via my [Credly Badge](https://www.credly.com/badges/2fce68b9-e952-4883-a242-48b70cc234a3/public_url)."),
+    ("Is there a verification link for your ServiceNow CAD certification?", ["cad link", "cad certificate"], "Yes, you can verify it directly via my [Credly Badge](https://www.credly.com/badges/2cc3c040-1b14-4b83-8cb7-63efd0e5532b/public_url)."),
     ("What skills do you have as a ServiceNow Administrator?", ["admin", "configuration", "skills"], "I can configure lists, forms, UI policies, business rules, client scripts, flow designers, user roles, security access, and notifications."),
     ("What skills do you have as a ServiceNow Developer?", ["developer", "scripting", "api"], "I can design custom tables, write Client Scripts, Business Rules, UI Actions, Script Includes, utilize Flow Designer, configure IntegrationHub, and build custom portal widgets."),
     ("Why did you decide to learn ServiceNow?", ["why", "reason", "interest"], "ServiceNow is a dominant enterprise cloud platform. Having CSA/CAD skills allows me to develop scalable, secure, and automated business workflows on a modern PaaS infrastructure."),
@@ -406,6 +406,27 @@ for idx, (q, keywords, a) in enumerate(portfolio_questions, 221):
     qa_list.append({
         "id": idx,
         "category": "portfolio",
+        "question": q,
+        "keywords": keywords,
+        "alternatives": generate_alternatives(q, keywords),
+        "answer": a
+    })
+
+# ==================== 10. CERTIFICATIONS (IDs 236-260) ====================
+certifications_questions = [
+    ("What certifications do you hold?", ["certifications", "credentials", "list"], "I hold 8 professional certifications: ServiceNow CSA and CAD, Wiser Technology Quantum Fundamentals, Microsoft Career Essentials in Generative AI, LinkedIn HTML/CSS & Generative AI, HackerRank Frontend Developer (React) and Software Engineer, and edX Further Mathematics from Imperial College London."),
+    ("Tell me about your ServiceNow CSA certification.", ["csa", "system administrator", "verification"], "I am a ServiceNow Certified System Administrator (CSA), credential ID 2fce68b9-e952-4883-a242-48b70cc234a3. Verified link: [Credly Badge](https://www.credly.com/badges/2fce68b9-e952-4883-a242-48b70cc234a3/public_url)."),
+    ("Tell me about your ServiceNow CAD certification.", ["cad", "developer", "verification"], "I am a ServiceNow Certified Application Developer (CAD), credential ID 2cc3c040-1b14-4b83-8cb7-63efd0e5532b. Verified link: [Credly Badge](https://www.credly.com/badges/2cc3c040-1b14-4b83-8cb7-63efd0e5532b/public_url)."),
+    ("Do you have any mathematics certifications?", ["math", "mathematics", "edx"], "Yes, I hold an edX Verified Certificate for A-level Further Mathematics for Year 13 from Imperial College London (Credential ID ccd9b21dbcb64ca580d41abb7ed5e485). Verification: [edX Certificate](https://courses.edx.org/certificates/ccd9b21dbcb64ca580d41abb7ed5e485)."),
+    ("What quantum computing certifications do you have?", ["quantum", "wiser"], "I hold the Quantum Fundamentals certification from Wiser Technology (Credential ID B6FE12DD)."),
+    ("Do you have any HackerRank certifications?", ["hackerrank", "skills"], "Yes, I hold HackerRank certifications for Frontend Developer (React) (ID: f17a39c89954) and Software Engineer (ID: e889d0ab5422). Verification links: [React Developer Certificate](https://www.hackerrank.com/certificates/f17a39c89954) and [Software Engineer Certificate](https://www.hackerrank.com/certificates/e889d0ab5422)."),
+    ("Do you have any AI certifications?", ["generative ai", "microsoft", "linkedin"], "Yes, I hold the Microsoft Career Essentials in Generative AI (ID: 48b5ea58357af437537df50baafb1d36b843c2d2621223bb8a14cc812bd8e039) and the LinkedIn HTML, CSS, and Generative AI certificate (ID: 47595de874c194ed924727e1132c6b47a79ee957631dcd92724ca8c55139aba8).")
+]
+
+for idx, (q, keywords, a) in enumerate(certifications_questions, 236):
+    qa_list.append({
+        "id": idx,
+        "category": "certifications",
         "question": q,
         "keywords": keywords,
         "alternatives": generate_alternatives(q, keywords),
