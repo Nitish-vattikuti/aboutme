@@ -156,4 +156,21 @@
   .font-editorial {
     font-family: 'Playfair Display', Georgia, serif;
   }
+
+  /* Scroll-driven frame animation — tall section for sticky pinning */
+  .scroll-animation {
+    height: 400vh;
+  }
+
+  @media (max-width: 1024px) {
+    .scroll-animation {
+      height: 350vh;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .scroll-animation {
+      height: 300vh;
+    }
+  }
 }
