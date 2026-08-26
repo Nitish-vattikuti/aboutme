@@ -1,5 +1,6 @@
 // api/chat.js
 import { logger } from './_utils/logger.js';
+import { getAIConfig } from './_utils/aiClient.js';
 import { securityCheck } from './_middleware/security.js';
 import { classifyIntent } from './_services/classifier.js';
 import { retrieveContext } from './_services/retrieval.js';
@@ -14,11 +15,11 @@ export default async function handler(req, res) {
     try {
         const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
         const messages = body?.messages;
-        const GROQ_API_KEY = process.env.GROQ_API_KEY;
+        const aiConfig = getAIConfig();
         
-        if (!GROQ_API_KEY) {
-            logger.error("System error", new Error("GROQ_API_KEY not configured"));
-            return res.status(500).json({ error: "GROQ_API_KEY environment variable is not configured in Vercel." });
+        if (!aiConfig) {
+            logger.error("System error", new Error("No AI API key configured"));
+            return res.status(500).json({ error: "AI API key is not configured in Vercel. Please set OPENROUTER_API_KEY, GROQ_API_KEY, GEMINI_API_KEY, or OPENAI_API_KEY in Vercel Environment Variables." });
         }
 
         // STEP 1: Security & Injection Check (Deterministic)
@@ -33,14 +34,14 @@ export default async function handler(req, res) {
         }
 
         const latestMessage = messages[messages.length - 1].content;
-        logger.info("Processing query", { queryLength: latestMessage.length });
+        logger.info("Processing query", { queryLength: latestMessage.length, provider: aiConfig.provider });
 
         // STEP 2: Semantic Intent Classification
-        const classification = await classifyIntent(latestMessage, GROQ_API_KEY);
+        const classification = await classifyIntent(latestMessage, aiConfig);
         
         if (classification.status === "REFUSE") {
             logger.info("Query refused by classifier", { topics: classification.topics });
-            const refusalMessage = "I am a scoped AI system representing Nitish's engineering portfolio. I can only discuss my projects, technical background, architecture decisions, and collaborations. How can I help you with those topics?";
+            const refusalMessage = "I am Nitish's portfolio AI assistant. I can only discuss my technical projects, software engineering background, architecture decisions, and collaborations. How can I help you with those?";
             return res.status(200).json({
                 choices: [{ message: { role: "assistant", content: refusalMessage } }]
             });
@@ -50,7 +51,7 @@ export default async function handler(req, res) {
         const context = retrieveContext(classification.topics, latestMessage);
 
         // STEP 5: Main Generation
-        const responseContent = await generateResponse(messages, context, GROQ_API_KEY);
+        const responseContent = await generateResponse(messages, context, aiConfig);
 
         // STEP 6: Return formatted response
         return res.status(200).json({

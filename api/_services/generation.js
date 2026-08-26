@@ -1,7 +1,7 @@
 // api/_services/generation.js
 import { logger } from '../_utils/logger.js';
 
-export async function generateResponse(messages, context, groqApiKey) {
+export async function generateResponse(messages, context, aiConfig) {
     const start = Date.now();
     
     // Message windowing: keep only the last 6 messages (3 turns)
@@ -25,14 +25,18 @@ ${context}
 </context>`;
 
     try {
-        const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+        const endpoint = aiConfig.endpoint || "https://api.groq.com/openai/v1/chat/completions";
+        const headers = aiConfig.headers || {
+            Authorization: `Bearer ${aiConfig.apiKey || aiConfig}`,
+            "Content-Type": "application/json",
+        };
+        const model = aiConfig.generationModel || "llama-3.3-70b-versatile";
+
+        const response = await fetch(endpoint, {
             method: "POST",
-            headers: {
-                Authorization: `Bearer ${groqApiKey}`,
-                "Content-Type": "application/json",
-            },
+            headers,
             body: JSON.stringify({
-                model: "llama-3.3-70b-versatile",
+                model,
                 messages: [
                     {
                         role: "system",
@@ -40,7 +44,7 @@ ${context}
                     },
                     ...windowedMessages
                 ],
-                temperature: 0.3, // Lower temp for more deterministic, technical responses
+                temperature: 0.3,
                 max_tokens: 1000,
                 stream: false,
             }),
@@ -48,12 +52,13 @@ ${context}
 
         if (!response.ok) {
             const errText = await response.text();
-            throw new Error(`Generation API error: ${response.status} ${errText}`);
+            throw new Error(`Generation API error (${aiConfig.provider || 'AI'}): ${response.status} ${errText}`);
         }
 
         const data = await response.json();
         
         logger.info("Generation completed", { 
+            provider: aiConfig.provider,
             latency: Date.now() - start,
             prompt_tokens: data.usage?.prompt_tokens,
             completion_tokens: data.usage?.completion_tokens

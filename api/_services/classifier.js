@@ -1,17 +1,21 @@
 // api/_services/classifier.js
 import { logger } from '../_utils/logger.js';
 
-export async function classifyIntent(query, groqApiKey) {
+export async function classifyIntent(query, aiConfig) {
     const start = Date.now();
     try {
-        const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+        const endpoint = aiConfig.endpoint || "https://api.groq.com/openai/v1/chat/completions";
+        const headers = aiConfig.headers || {
+            Authorization: `Bearer ${aiConfig.apiKey || aiConfig}`,
+            "Content-Type": "application/json",
+        };
+        const model = aiConfig.classifierModel || "llama-3.1-8b-instant";
+
+        const response = await fetch(endpoint, {
             method: "POST",
-            headers: {
-                Authorization: `Bearer ${groqApiKey}`,
-                "Content-Type": "application/json",
-            },
+            headers,
             body: JSON.stringify({
-                model: "llama-3.1-8b-instant", // Fast, small model for classification
+                model,
                 messages: [
                     {
                         role: "system",
@@ -64,9 +68,7 @@ Query: "Tell me about your AI background" -> {"status": "ALLOW", "topics": ["bac
         return result;
 
     } catch (error) {
-        logger.error("Classifier failed", error);
-        // Fail open or closed? Better to fail closed, but for portfolio UX, maybe default to ALLOW with generic topics.
-        // We'll fail safe to ALLOW but with no topics, letting the main model handle it.
+        logger.error("Classifier failed, failing open to ALLOW", error);
         return { status: "ALLOW", topics: [] }; 
     }
 }
