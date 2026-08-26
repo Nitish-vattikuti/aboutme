@@ -17,8 +17,8 @@ export function retrieveContext(topics, query) {
         }
     }
 
-    // 2. Retrieve high-level topic knowledge
-    let standardContext = [];
+    // 2. Retrieve high-level topic knowledge (always include profile background)
+    let standardContext = [portfolioKnowledge["background"]];
     const lowerTopics = topics ? topics.map(t => t.toLowerCase()) : [];
 
     if (lowerTopics.some(t => t.includes("uav") || t.includes("drone") || t.includes("guidance") || t.includes("simulation"))) {
@@ -39,16 +39,8 @@ export function retrieveContext(topics, query) {
     if (lowerTopics.some(t => t.includes("plate") || t.includes("license") || t.includes("cctv"))) {
         standardContext.push(portfolioKnowledge["numberplate"]);
     }
-    if (lowerTopics.some(t => t.includes("background") || t.includes("education") || t.includes("experience") || t.includes("skills") || t.includes("who"))) {
-        standardContext.push(portfolioKnowledge["background"]);
-    }
     if (lowerTopics.some(t => t.includes("hire") || t.includes("work") || t.includes("collaborate") || t.includes("contact"))) {
         standardContext.push(portfolioKnowledge["collaborations"]);
-    }
-
-    // Fallback topics
-    if (standardContext.length === 0) {
-        standardContext.push(portfolioKnowledge["background"]);
     }
 
     contextParts.push("### General Portfolio Knowledge:");

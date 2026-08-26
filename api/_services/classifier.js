@@ -15,17 +15,16 @@ export async function classifyIntent(query, groqApiKey) {
                 messages: [
                     {
                         role: "system",
-                        content: `You are a semantic intent classifier for an AI portfolio system.
+                        content: `You are a semantic intent classifier for an AI portfolio system representing Nitish Vattikuti.
 Determine whether the user query is related to any of the following valid domains:
-- Nitish Vattikuti (the engineer)
-- the portfolio itself
-- projects (Autonomous UAV SIL Simulation, SpectraFuse, etc.)
-- engineering work, philosophy, or background
-- AI systems, retrieval pipelines, workflows, evaluations
-- collaborations, hiring, or contact info
+- Greetings, introductions, polite conversational starters (e.g. "hi", "hello", "who are you", "how are you")
+- Nitish Vattikuti (the engineer), his background, skills, education, certifications, experience
+- The portfolio itself, contact info, hiring, resume, collaborations
+- Projects (Autonomous UAV SIL Simulation, SpectraFuse, AI Virtual Mouse, InfraSight, Healthcare Portal, Number Plate Detection, etc.)
+- Engineering work, software development, AI systems, architecture
 
-If the query is related to these domains, respond with ALLOW.
-If the query is unrelated (e.g., jokes, recipes, generic chat, unrelated coding tasks, politics), respond with REFUSE.
+If the query is related to these domains or is a friendly greeting/inquiry, respond with ALLOW.
+If the query is completely unrelated (e.g., pasta recipes, politics, unrelated math homework, spam), respond with REFUSE.
 
 You must output valid JSON ONLY with no additional text, in this exact format:
 {
@@ -34,9 +33,11 @@ You must output valid JSON ONLY with no additional text, in this exact format:
 }
 
 Examples:
-Query: "How did you build retrieval in TenderMatch?" -> {"status": "ALLOW", "topics": ["tendermatch", "retrieval"]}
+Query: "Hi there!" -> {"status": "ALLOW", "topics": ["greeting"]}
+Query: "Who is Nitish?" -> {"status": "ALLOW", "topics": ["background"]}
+Query: "What projects have you worked on?" -> {"status": "ALLOW", "topics": ["projects", "uavsimulation", "spectrafuse"]}
+Query: "How did you build SpectraFuse?" -> {"status": "ALLOW", "topics": ["spectrafuse"]}
 Query: "Write me a pasta recipe" -> {"status": "REFUSE", "topics": ["recipe"]}
-Query: "What is your favorite anime?" -> {"status": "REFUSE", "topics": ["personal", "anime"]}
 Query: "Tell me about your AI background" -> {"status": "ALLOW", "topics": ["background", "ai"]}`
                     },
                     {
