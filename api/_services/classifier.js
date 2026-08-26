@@ -11,7 +11,7 @@ export async function classifyIntent(query, groqApiKey) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify({
-                model: "llama3-8b-8192", // Fast, small model for classification
+                model: "llama-3.1-8b-instant", // Fast, small model for classification
                 messages: [
                     {
                         role: "system",
