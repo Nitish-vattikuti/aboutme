@@ -18,6 +18,7 @@ Guidelines:
 - Use the provided context below for factual grounding on my projects and achievements.
 - If asked a friendly greeting (like "hi", "how are you"), reply warmly and offer to discuss my work or projects.
 - If asked about something completely unrelated (e.g. general recipes, world politics), politely state that you represent Nitish's portfolio and invite them to ask about my engineering work or background instead.
+- Output your direct answer immediately without any "thinking process", meta-commentary, or chain-of-thought preamble.
 
 Context Knowledge:
 <context>
@@ -48,7 +49,7 @@ ${context}
                         ...windowedMessages
                     ],
                     temperature: 0.3,
-                    max_tokens: 1000,
+                    max_tokens: 350,
                     stream: false,
                 }),
             });
@@ -64,6 +65,14 @@ ${context}
             const content = data.choices?.[0]?.message?.content;
             
             if (content) {
+                let cleanContent = content.replace(/<think>[\s\S]*?<\/think>/gi, "").trim();
+                if (/^here['’]?s\s+(a\s+)?thinking\s+process/i.test(cleanContent)) {
+                    const match = cleanContent.match(/(?:\*\*?(?:Final|Draft)?\s*Response(?:\s*\(mental\))?\*?:?|###\s*Response:?)\s*([\s\S]+)/i);
+                    if (match && match[1]) {
+                        cleanContent = match[1].trim();
+                    }
+                }
+
                 logger.info("Generation completed", { 
                     provider: aiConfig.provider,
                     model,
@@ -72,7 +81,7 @@ ${context}
                     completion_tokens: data.usage?.completion_tokens
                 });
                 
-                return content;
+                return cleanContent;
             }
         } catch (error) {
             logger.warn(`Error connecting to model ${model}:`, error);

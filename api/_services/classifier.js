@@ -8,7 +8,13 @@ export async function classifyIntent(query, aiConfig) {
         Authorization: `Bearer ${aiConfig.apiKey || aiConfig}`,
         "Content-Type": "application/json",
     };
-    const models = aiConfig.classifierModels || (aiConfig.classifierModel ? [aiConfig.classifierModel] : ["llama-3.1-8b-instant"]);
+    const models = aiConfig.classifierModels || [
+        "poolside/laguna-xs-2.1:free",
+        "nvidia/nemotron-3.5-lightning:free",
+        "poolside/laguna-s-2.1:free",
+        "nvidia/nemotron-3-super-120b-a12b:free",
+        "cohere/north-mini-code:free"
+    ];
 
     for (const model of models) {
         try {
@@ -31,43 +37,38 @@ Determine whether the user query is related to any of the following valid domain
 If the query is related to these domains or is a friendly greeting/inquiry, respond with ALLOW.
 If the query is completely unrelated (e.g., pasta recipes, politics, unrelated math homework, spam), respond with REFUSE.
 
-You must output valid JSON ONLY with no additional text, in this exact format:
-{
-  "status": "ALLOW" | "REFUSE",
-  "topics": ["list", "of", "topics", "mentioned"]
-}
-
-Examples:
-Query: "Hi there!" -> {"status": "ALLOW", "topics": ["greeting"]}
-Query: "Who is Nitish?" -> {"status": "ALLOW", "topics": ["background"]}
-Query: "What projects have you worked on?" -> {"status": "ALLOW", "topics": ["projects", "uavsimulation", "spectrafuse"]}
-Query: "How did you build SpectraFuse?" -> {"status": "ALLOW", "topics": ["spectrafuse"]}
-Query: "Write me a pasta recipe" -> {"status": "REFUSE", "topics": ["recipe"]}
-Query: "Tell me about your AI background" -> {"status": "ALLOW", "topics": ["background", "ai"]}`
+Output valid JSON ONLY in this format:
+{"status": "ALLOW" | "REFUSE", "topics": ["topic1", "topic2"]}`
                         },
                         {
                             role: "user",
                             content: `Query: "${query}"`
                         }
                     ],
-                    response_format: { type: "json_object" },
                     temperature: 0.1,
-                    max_tokens: 50
+                    max_tokens: 80
                 }),
             });
 
             if (!response.ok) {
                 const errText = await response.text();
-                logger.warn(`Classifier model ${model} failed: ${response.status} ${errText}. Trying next if available.`);
+                logger.warn(`Classifier model ${model} failed (${response.status}): ${errText}`);
                 continue;
             }
 
             const data = await response.json();
-            const resultText = data.choices[0]?.message?.content;
+            const resultText = data.choices?.[0]?.message?.content;
             if (resultText) {
-                const result = JSON.parse(resultText);
-                logger.info("Classification completed", { latency: Date.now() - start, model, result });
-                return result;
+                const jsonMatch = resultText.match(/\{[\s\S]*\}/);
+                if (jsonMatch) {
+                    const result = JSON.parse(jsonMatch[0]);
+                    logger.info("Classification completed", { latency: Date.now() - start, model, result });
+                    return result;
+                }
+                if (resultText.toUpperCase().includes("REFUSE")) {
+                    return { status: "REFUSE", topics: [] };
+                }
+                return { status: "ALLOW", topics: [] };
             }
 
         } catch (error) {

@@ -36,21 +36,10 @@ export default async function handler(req, res) {
         const latestMessage = messages[messages.length - 1].content;
         logger.info("Processing query", { queryLength: latestMessage.length, provider: aiConfig.provider });
 
-        // STEP 2: Semantic Intent Classification
-        const classification = await classifyIntent(latestMessage, aiConfig);
-        
-        if (classification.status === "REFUSE") {
-            logger.info("Query refused by classifier", { topics: classification.topics });
-            const refusalMessage = "I am Nitish's portfolio AI assistant. I can only discuss my technical projects, software engineering background, architecture decisions, and collaborations. How can I help you with those?";
-            return res.status(200).json({
-                choices: [{ message: { role: "assistant", content: refusalMessage } }]
-            });
-        }
+        // Fast Context Retrieval (Local instant fuzzy match & knowledge grounding)
+        const context = retrieveContext([], latestMessage);
 
-        // STEP 3 & 4: Context Retrieval
-        const context = retrieveContext(classification.topics, latestMessage);
-
-        // STEP 5: Main Generation
+        // Single Fast Generation Call
         const responseContent = await generateResponse(messages, context, aiConfig);
 
         // STEP 6: Return formatted response

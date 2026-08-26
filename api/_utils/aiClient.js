@@ -22,16 +22,17 @@ export function getAIConfig() {
                 "X-Title": "Nitish Portfolio AI"
             },
             generationModels: [
-                "meta-llama/llama-3.3-70b-instruct:free",
-                "google/gemini-2.0-flash-exp:free",
-                "meta-llama/llama-3.1-8b-instruct:free",
-                "mistralai/mistral-7b-instruct:free",
-                "qwen/qwen-2.5-coder-32b-instruct:free"
+                "poolside/laguna-xs-2.1:free",
+                "cohere/north-mini-code:free",
+                "nvidia/nemotron-3.5-lightning:free",
+                "poolside/laguna-s-2.1:free",
+                "nvidia/nemotron-3-super-120b-a12b:free",
+                "nvidia/nemotron-3-ultra-550b-a55b:free"
             ],
             classifierModels: [
-                "meta-llama/llama-3.1-8b-instruct:free",
-                "mistralai/mistral-7b-instruct:free",
-                "google/gemini-2.0-flash-exp:free"
+                "poolside/laguna-xs-2.1:free",
+                "nvidia/nemotron-3.5-lightning:free",
+                "nvidia/nemotron-3-super-120b-a12b:free"
             ]
         };
     }
