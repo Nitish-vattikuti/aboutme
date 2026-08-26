@@ -1,11 +1,13 @@
 // api/_utils/aiClient.js
 
 export function getAIConfig() {
-    const key = process.env.OPENROUTER_API_KEY || process.env.GROQ_API_KEY || process.env.OPENAI_API_KEY || process.env.GEMINI_API_KEY;
+    const rawKey = process.env.OPENROUTER_API_KEY || process.env.GROQ_API_KEY || process.env.OPENAI_API_KEY || process.env.GEMINI_API_KEY;
     
-    if (!key) {
+    if (!rawKey || !rawKey.trim()) {
         return null;
     }
+
+    const key = rawKey.trim();
 
     // OpenRouter (Configured strictly with top FREE models + automatic free fallback)
     if (process.env.OPENROUTER_API_KEY || key.startsWith("sk-or-")) {

@@ -77,13 +77,14 @@ const AIChatBot = () => {
         setMessages((prev) => [...prev, { role: "assistant", content: data.choices[0].message.content }]);
       }
     } catch (e: any) {
-      console.error(e);
+      console.error("AI Chatbot API Error:", e);
       const { match, score } = findBestMatch(text);
       let reply = "";
-      if (match && score >= 0.15) {
+      if (match && score >= 0.25) {
         reply = match.answer;
       } else {
-        reply = "I'm sorry, I'm having trouble connecting to my AI backend. However, I can answer questions offline from my database of 240 specific questions covering my engineering background, certifications, and projects. Please try rephrasing your question or ask about a specific topic!";
+        const errorDetail = e.message || "Connection failed";
+        reply = `⚠️ **AI Backend Error:** ${errorDetail}\n\n*Check that your API key is configured in Vercel Settings → Environment Variables and that the deployment is up to date.*`;
       }
       setMessages((prev) => [...prev, { role: "assistant", content: reply }]);
     }
