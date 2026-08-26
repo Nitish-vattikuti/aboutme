@@ -24,50 +24,62 @@ Context Knowledge:
 ${context}
 </context>`;
 
-    try {
-        const endpoint = aiConfig.endpoint || "https://api.groq.com/openai/v1/chat/completions";
-        const headers = aiConfig.headers || {
-            Authorization: `Bearer ${aiConfig.apiKey || aiConfig}`,
-            "Content-Type": "application/json",
-        };
-        const model = aiConfig.generationModel || "llama-3.3-70b-versatile";
+    const endpoint = aiConfig.endpoint || "https://api.groq.com/openai/v1/chat/completions";
+    const headers = aiConfig.headers || {
+        Authorization: `Bearer ${aiConfig.apiKey || aiConfig}`,
+        "Content-Type": "application/json",
+    };
+    const models = aiConfig.generationModels || (aiConfig.generationModel ? [aiConfig.generationModel] : ["llama-3.3-70b-versatile"]);
 
-        const response = await fetch(endpoint, {
-            method: "POST",
-            headers,
-            body: JSON.stringify({
-                model,
-                messages: [
-                    {
-                        role: "system",
-                        content: systemPrompt
-                    },
-                    ...windowedMessages
-                ],
-                temperature: 0.3,
-                max_tokens: 1000,
-                stream: false,
-            }),
-        });
+    let lastError = null;
 
-        if (!response.ok) {
-            const errText = await response.text();
-            throw new Error(`Generation API error (${aiConfig.provider || 'AI'}): ${response.status} ${errText}`);
+    for (const model of models) {
+        try {
+            const response = await fetch(endpoint, {
+                method: "POST",
+                headers,
+                body: JSON.stringify({
+                    model,
+                    messages: [
+                        {
+                            role: "system",
+                            content: systemPrompt
+                        },
+                        ...windowedMessages
+                    ],
+                    temperature: 0.3,
+                    max_tokens: 1000,
+                    stream: false,
+                }),
+            });
+
+            if (!response.ok) {
+                const errText = await response.text();
+                logger.warn(`Model ${model} failed (${response.status}): ${errText}. Trying next free model if available.`);
+                lastError = new Error(`API error (${model}): ${response.status} ${errText}`);
+                continue;
+            }
+
+            const data = await response.json();
+            const content = data.choices?.[0]?.message?.content;
+            
+            if (content) {
+                logger.info("Generation completed", { 
+                    provider: aiConfig.provider,
+                    model,
+                    latency: Date.now() - start,
+                    prompt_tokens: data.usage?.prompt_tokens,
+                    completion_tokens: data.usage?.completion_tokens
+                });
+                
+                return content;
+            }
+        } catch (error) {
+            logger.warn(`Error connecting to model ${model}:`, error);
+            lastError = error;
         }
-
-        const data = await response.json();
-        
-        logger.info("Generation completed", { 
-            provider: aiConfig.provider,
-            latency: Date.now() - start,
-            prompt_tokens: data.usage?.prompt_tokens,
-            completion_tokens: data.usage?.completion_tokens
-        });
-        
-        return data.choices[0].message.content;
-
-    } catch (error) {
-        logger.error("Generation failed", error);
-        throw error;
     }
+
+    logger.error("All free models failed", lastError);
+    throw lastError || new Error("All AI models are currently busy. Please try again in a few seconds.");
 }

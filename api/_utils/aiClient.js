@@ -7,7 +7,7 @@ export function getAIConfig() {
         return null;
     }
 
-    // OpenRouter
+    // OpenRouter (Configured strictly with top FREE models + automatic free fallback)
     if (process.env.OPENROUTER_API_KEY || key.startsWith("sk-or-")) {
         return {
             provider: "openrouter",
@@ -19,8 +19,18 @@ export function getAIConfig() {
                 "HTTP-Referer": "https://aboutme.vercel.app",
                 "X-Title": "Nitish Portfolio AI"
             },
-            generationModel: "meta-llama/llama-3.3-70b-instruct",
-            classifierModel: "meta-llama/llama-3.1-8b-instruct"
+            generationModels: [
+                "meta-llama/llama-3.3-70b-instruct:free",
+                "google/gemini-2.0-flash-exp:free",
+                "meta-llama/llama-3.1-8b-instruct:free",
+                "mistralai/mistral-7b-instruct:free",
+                "qwen/qwen-2.5-coder-32b-instruct:free"
+            ],
+            classifierModels: [
+                "meta-llama/llama-3.1-8b-instruct:free",
+                "mistralai/mistral-7b-instruct:free",
+                "google/gemini-2.0-flash-exp:free"
+            ]
         };
     }
 
@@ -34,8 +44,8 @@ export function getAIConfig() {
                 "Authorization": `Bearer ${key}`,
                 "Content-Type": "application/json"
             },
-            generationModel: "gemini-2.0-flash",
-            classifierModel: "gemini-2.0-flash"
+            generationModels: ["gemini-2.0-flash", "gemini-1.5-flash"],
+            classifierModels: ["gemini-2.0-flash"]
         };
     }
 
@@ -49,8 +59,8 @@ export function getAIConfig() {
                 "Authorization": `Bearer ${key}`,
                 "Content-Type": "application/json"
             },
-            generationModel: "gpt-4o-mini",
-            classifierModel: "gpt-4o-mini"
+            generationModels: ["gpt-4o-mini"],
+            classifierModels: ["gpt-4o-mini"]
         };
     }
 
@@ -63,7 +73,7 @@ export function getAIConfig() {
             "Authorization": `Bearer ${key}`,
             "Content-Type": "application/json"
         },
-        generationModel: "llama-3.3-70b-versatile",
-        classifierModel: "llama-3.1-8b-instant"
+        generationModels: ["llama-3.3-70b-versatile", "llama-3.1-8b-instant"],
+        classifierModels: ["llama-3.1-8b-instant"]
     };
 }
