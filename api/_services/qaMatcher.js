@@ -1,14 +1,5 @@
 // api/_services/qaMatcher.js
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// Load the QA dataset
-const qaDatasetPath = path.join(__dirname, '..', '_data', 'qa_dataset.json');
-const qaDataset = JSON.parse(fs.readFileSync(qaDatasetPath, 'utf8'));
+import { qaDataset } from '../_data/qa_dataset.js';
 
 const STOPWORDS = new Set([
   "what", "is", "are", "you", "about", "for", "how", "to", "in", "of", "on", "with", "me",

@@ -12,12 +12,13 @@ export default async function handler(req, res) {
     if (req.method === "OPTIONS") return res.status(200).end();
 
     try {
-        const { messages } = req.body;
+        const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+        const messages = body?.messages;
         const GROQ_API_KEY = process.env.GROQ_API_KEY;
         
         if (!GROQ_API_KEY) {
             logger.error("System error", new Error("GROQ_API_KEY not configured"));
-            return res.status(500).json({ error: "AI service configuration error" });
+            return res.status(500).json({ error: "GROQ_API_KEY environment variable is not configured in Vercel." });
         }
 
         // STEP 1: Security & Injection Check (Deterministic)
@@ -60,6 +61,6 @@ export default async function handler(req, res) {
 
     } catch (error) {
         logger.error("Chat pipeline error", error);
-        return res.status(500).json({ error: "An operational error occurred in the AI system." });
+        return res.status(500).json({ error: error.message || "An operational error occurred in the AI system." });
     }
 }
